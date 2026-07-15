@@ -32,15 +32,20 @@ C {vdd.sym} 130 -410 0 0 {name=l2 lab=VDD}
 C {gnd.sym} 130 -350 0 0 {name=l11 lab=0}
 C {lab_pin.sym} 200 -290 0 0 {name=p4 sig_type=std_logic lab=Vinn}
 C {lab_pin.sym} 100 -290 0 0 {name=p5 sig_type=std_logic lab=Vinp}
-C {code_shown.sym} 330 -850 0 0 {name=SPICE only_toplevel=false value=".option savecurrents
+C {code_shown.sym} 70 -940 0 0 {name=SPICE only_toplevel=false value=".option savecurrents
 .save all
 .control
 op
 write oppoints_miller.raw
 ac dec 20 1 1e9
 write ac_miller.raw
+plot vdb(Vout)
+let phase = 180*cph(v(Vout))/pi
+plot phase
+meas ac pm_deg find phase when vdb(Vout)=0
+print pm_deg + 180
+meas ac 0db_f when vdb(Vout)=0
 .endc"}
-C {chipathon-2026-ppg/two_stage_miller_forsym.sym} 590 -430 0 0 {name=x1}
 C {isource.sym} 450 -590 0 0 {name=I0 value=25u}
 C {gnd.sym} 450 -560 0 0 {name=l1 lab=0}
 C {vdd.sym} 590 -540 0 0 {name=l3 lab=VDD}
@@ -57,3 +62,4 @@ device="ceramic capacitor"
 }
 C {gnd.sym} 840 -410 0 0 {name=l30 lab=0
 }
+C {chipathon-2026-ppg/jz_tia/two_stage_miller_forsym.sym} 590 -430 0 0 {name=x1}

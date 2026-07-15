@@ -91,4 +91,4 @@ C {lab_pin.sym} 490 -160 0 1 {name=p3 sig_type=std_logic lab=Voutp
 }
 C {lab_pin.sym} 430 -140 0 1 {name=p6 sig_type=std_logic lab=Voutn
 }
-C {chipathon-2026-ppg/cascode_cmfb_forsym.sym} 210 -90 0 0 {name=x1}
+C {chipathon-2026-ppg/jz_fda/cascode_cmfb_forsym.sym} 210 -90 0 0 {name=x1}

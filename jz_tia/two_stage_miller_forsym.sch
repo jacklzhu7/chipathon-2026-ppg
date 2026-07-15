@@ -57,7 +57,7 @@ N 940 -490 940 -440 {lab=Vout}
 N 940 -250 940 -200 {lab=GND}
 N 930 -370 940 -370 {lab=Vout
 }
-N 850 -370 870 -370 {lab=Vout
+N 850 -370 870 -370 {lab=#net4
 }
 N 770 -370 790 -370 {lab=#net2
 }
@@ -66,7 +66,6 @@ N 630 -420 630 -400 {lab=VDD}
 N 630 -400 720 -400 {lab=VDD}
 N 720 -420 720 -400 {lab=VDD}
 N 720 -420 770 -420 {lab=VDD}
-N 870 -370 930 -370 {lab=Vout}
 N 770 -650 770 -580 {lab=VDD}
 N 700 -200 700 -140 {lab=GND}
 N 670 -400 670 -370 {lab=VDD}
@@ -182,13 +181,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/ppolyf_u_1k.sym} 1170 -230 1 0 {name=R1
-W=1e-6
-L=1e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=1
-spice_ignore=true}
 C {ngspice_get_value.sym} 770 -330 0 0 {name=r4 node=i(@m.xm5.m0[id])
 descr="I="
 }
@@ -203,7 +195,7 @@ descr="gds="
 }
 C {capa.sym} 820 -370 3 0 {name=C1
 m=1
-value=1p
+value=5p
 footprint=1206
 device="ceramic capacitor"
 }
@@ -214,3 +206,8 @@ C {ipin.sym} 440 -380 0 0 {name=p3 lab=Ibias25u}
 C {ipin.sym} 770 -650 0 0 {name=p5 lab=VDD}
 C {ipin.sym} 700 -140 0 0 {name=p6 lab=GND}
 C {lab_pin.sym} 670 -370 2 0 {name=p7 sig_type=std_logic lab=VDD}
+C {res.sym} 900 -370 3 0 {name=R1
+value=11k
+footprint=1206
+device=resistor
+m=1}

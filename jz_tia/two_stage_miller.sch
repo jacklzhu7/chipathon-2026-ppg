@@ -269,7 +269,7 @@ C {lab_pin.sym} 770 -270 0 1 {name=p6 sig_type=std_logic lab=Vout1}
 C {lab_pin.sym} 430 -470 0 1 {name=p7 sig_type=std_logic lab=Vbias}
 C {capa.sym} 740 -360 3 0 {name=C1
 m=1
-value=1p
+value=2p
 footprint=1206
 device="ceramic capacitor"
 }
