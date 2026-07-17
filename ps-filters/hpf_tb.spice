@@ -1,0 +1,17 @@
+.title HPF standalone with 1Meg loads (emulating LPF R1) — fc=0.1Hz check
+.include /foss/designs/sscs-chipathon-2026/filters/hpf.spice
+VCM CM GND dc 1.7
+Vip in_p GND dc 1.7 ac 0.5
+Vin in_n GND dc 1.7 ac -0.5
+* emulate LPF input: R1=1Meg into virtual ground at CM potential
+Rload_p out_p CM 1Meg
+Rload_n out_n CM 1Meg
+.ac dec 20 0.001 1k
+.control
+run
+let vdiff = v(out_p)-v(out_n)
+let vdb = db(vdiff)
+plot vdb title "HPF loaded by 1Meg"
+meas ac fc WHEN vdb=-3
+.endc
+.end

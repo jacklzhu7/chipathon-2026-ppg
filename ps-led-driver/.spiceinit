@@ -1,0 +1,3 @@
+set ngbehavior=hsa
+set substart=1
+set netlist_dir "/foss/designs/sscs-chipathon-2026/led_driver/schematic"

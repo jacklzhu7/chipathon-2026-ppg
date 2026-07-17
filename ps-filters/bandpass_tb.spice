@@ -1,0 +1,53 @@
+.title PPG Bandpass — HPF + Active LPF + output RC (real FDA)
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/designs/sscs-chipathon-2026/filters/cascode_cmfb.spice
+
+VVDD   VDD   GND  dc 3.3
+VVb1   Vb1   GND  dc 1.6
+VVb2   Vb2   GND  dc 1.8
+VVbias Vbias GND  dc 0.8025
+VVb3_1 Vb3_1 GND dc 2.387
+VCM    CM    GND  dc 1.2
+
+Vip  in_p  GND  dc 1.2 ac 0.5
+Vin  in_n  GND  dc 1.2 ac -0.5
+
+* ===== HPF fc=0.1Hz =====
+Chpf_p  in_p   hpf_p   1.59u
+Rhpf_p  hpf_p  CM      1G
+Chpf_n  in_n   hpf_n   1.59u
+Rhpf_n  hpf_n  CM      1G
+
+* ===== Active LPF fc=10Hz =====
+R1p   hpf_p  Xp    1Meg
+Rfp   fda_op  Xp    1Meg
+Cfp   fda_op  Xp    15.9n
+R1n   hpf_n  Xn    1Meg
+Rfn   fda_on  Xn    1Meg
+Cfn   fda_on  Xn    15.9n
+
+XFDA1 Xp Xn fda_op fda_on VDD GND Vb1 Vb2 Vb3_1 Vbias FDA
+
+* ===== Output passive RC (2nd pole at 30Hz, kills feedthrough) =====
+Rout_p  fda_op  Voutp  100k
+Cout_p  Voutp   CM     53n
+Rout_n  fda_on  Voutn  100k
+Cout_n  Voutn   CM     53n
+
+.ic v(fda_op)=1.7 v(fda_on)=1.7
+.ic v(Xp)=1.45 v(Xn)=1.45
+.ic v(hpf_p)=1.2 v(hpf_n)=1.2
+
+.ac dec 20 0.001 1k
+
+.control
+run
+let Vdiff_hpf = v(hpf_p) - v(hpf_n)
+let Vdiff_out = v(Voutp) - v(Voutn)
+plot db(Vdiff_hpf) title "HPF stage"
+plot db(Vdiff_out) title "Full bandpass clean rolloff"
+plot db(Vdiff_hpf) db(Vdiff_out) title "HPF and bandpass"
+.endc
+.end

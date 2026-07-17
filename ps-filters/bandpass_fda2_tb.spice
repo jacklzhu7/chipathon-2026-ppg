@@ -1,0 +1,52 @@
+.title PPG Bandpass with foldedcasc FDA — HPF 0.1Hz + LPF 10Hz
+* Real folded-cascode FDA, CM in=out=1.7V
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/designs/sscs-chipathon-2026/filters/foldedcasc_fda.spice
+
+* --- Supplies and bias ---
+VVDD   VDD   GND  dc 3.3
+VVb1   Vb1   GND  dc 1.4
+VVb2   Vb2   GND  dc 1.6
+VVb3   Vb3   GND  dc 0.8
+VVb4   Vb4   GND  dc 2.3
+Ibias  ibn   GND  dc 25u
+VCM    CM    GND  dc 1.7
+
+* --- Differential input, 1.7V CM ---
+Vip  in_p  GND  dc 1.7 ac 0.5
+Vin  in_n  GND  dc 1.7 ac -0.5
+
+* ===== HPF fc=0.1Hz (passive) =====
+Chpf_p  in_p   hpf_p   1.59u
+Rhpf_p  hpf_p  CM      1G
+Chpf_n  in_n   hpf_n   1.59u
+Rhpf_n  hpf_n  CM      1G
+
+* ===== Active LPF fc=10Hz using FDA =====
+* Pin order: VDD Vb2 Voutp Voutn Vb1 Ibias25u Vinn GND Vinp Vb3 Vb4
+R1p   hpf_p  Xp    1Meg
+Rfp   Voutn  Xp    1Meg
+Cfp   Voutn  Xp    15.9n
+R1n   hpf_n  Xn    1Meg
+Rfn   Voutp  Xn    1Meg
+Cfn   Voutp  Xn    15.9n
+
+XFDA1 VDD Vb2 Voutp Voutn Vb1 ibn Xn GND Xp Vb3 Vb4 foldedcasc_cmfb_forsym
+
+.ic v(Voutp)=1.7 v(Voutn)=1.7
+.ic v(Xp)=1.7 v(Xn)=1.7
+.ic v(hpf_p)=1.7 v(hpf_n)=1.7
+
+.ac dec 20 0.001 1k
+
+.control
+run
+let Vdiff_hpf = v(hpf_p) - v(hpf_n)
+let Vdiff_out = v(Voutp) - v(Voutn)
+plot db(Vdiff_hpf) title "HPF stage 0.1Hz"
+plot db(Vdiff_out) title "Full bandpass 0.1-10Hz"
+plot db(Vdiff_hpf) db(Vdiff_out) title "HPF and bandpass"
+.endc
+.end

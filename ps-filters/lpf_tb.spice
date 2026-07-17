@@ -1,0 +1,25 @@
+.title LPF standalone — fc=10Hz check
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/designs/sscs-chipathon-2026/filters/lpf.spice
+
+VVDD VDD GND dc 3.3
+VVb1 Vb1 GND dc 1.4
+VVb2 Vb2 GND dc 1.6
+VVb3 Vb3 GND dc 0.8
+VVb4 Vb4 GND dc 2.3
+IB Ibias25u GND dc 25u
+
+Vip in_p GND dc 1.7 ac 0.5
+Vin in_n GND dc 1.7 ac -0.5
+
+.ic v(out_p)=1.7 v(out_n)=1.7 v(Xp)=1.7 v(Xn)=1.7
+
+.ac dec 20 0.001 1k
+.control
+run
+let vdiff = v(out_p)-v(out_n)
+plot db(vdiff) title "LPF standalone"
+meas ac fc WHEN db(vdiff)=-3
+.endc
+.end

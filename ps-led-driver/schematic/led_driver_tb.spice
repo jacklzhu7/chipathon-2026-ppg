@@ -1,0 +1,20 @@
+.title LED Driver Testbench
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.model LED_GREEN D(Is=1e-16 N=2.0 Rs=5 Vj=1.8 Cjo=10p)
+
+VVDD VDD GND 3.3
+VGATE VGATE GND pulse(0 3.3 0 10n 10n 50u 500u)
+D1 VDD net1 LED_GREEN
+R_set net1 net2 100
+XM1 net2 VGATE GND GND nfet_03v3 W=20u L=0.28u
+
+.tran 10n 5m
+.control
+run
+meas tran I_peak min i(vvdd) from=1m to=5m
+meas tran I_avg  avg i(vvdd) from=1m to=5m
+print I_peak I_avg
+plot -i(vvdd) title "LED current"
+.endc
+.end

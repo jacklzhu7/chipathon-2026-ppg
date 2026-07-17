@@ -1,0 +1,23 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=X1"}
+V {}
+S {}
+E {}
+L 4 -60 -40 60 -40 {}
+L 4 60 -40 60 40 {}
+L 4 60 40 -60 40 {}
+L 4 -60 40 -60 -40 {}
+L 4 -100 0 -60 0 {}
+L 4 0 -40 0 -70 {}
+L 4 0 40 0 70 {}
+B 5 -102.5 -2.5 -97.5 2.5 {name=VGATE dir=in}
+B 5 -2.5 -72.5 2.5 -67.5 {name=LED_K dir=inout}
+B 5 -2.5 67.5 2.5 72.5 {name=GND dir=inout}
+T {led_driver} -52 -4 0 0 0.3 0.3 {}
+T {@name} -60 -52 0 0 0.25 0.25 {}
+T {VGATE} -95 -14 0 0 0.2 0.2 {}
+T {LED_K} 6 -58 0 0 0.2 0.2 {}
+T {GND} 6 50 0 0 0.2 0.2 {}

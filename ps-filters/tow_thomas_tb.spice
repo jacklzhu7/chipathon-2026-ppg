@@ -1,0 +1,82 @@
+.title Passive HPF + Tow-Thomas LPF fc=10Hz with real FDA
+* Cross-coupled differential feedback for correct sign
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/designs/sscs-chipathon-2026/filters/cascode_cmfb.spice
+
+VVDD   VDD   GND  dc 3.3
+VVb1   Vb1   GND  dc 1.6
+VVb2   Vb2   GND  dc 1.8
+VVbias Vbias GND  dc 0.8025
+VCM    CM    GND  dc 1.2
+
+Vip  in_p  GND  dc 1.2 ac 0.5
+Vin  in_n  GND  dc 1.2 ac -0.5
+
+* PASSIVE HPF fc=0.1Hz
+Chpf_p  in_p   hpf_p   1.41u
+Rhpf_p  hpf_p  CM      1.125Meg
+Chpf_n  in_n   hpf_n   1.41u
+Rhpf_n  hpf_n  CM      1.125Meg
+
+* ============================================================
+* TOW-THOMAS LPF — correct sign via cross-coupling
+*
+* FDA1 (inverting integrator via output swap):
+*   Xp = + input, Xn = - input
+*   Output: BPF_n on Voutp, BPF_p on Voutn
+*   (swapped to make it inverting)
+*
+* Feedback signs:
+*   R3: LPF_p -> Xp, LPF_n -> Xn  (negative feedback: correct)
+*   Rq: BPF_p -> Xn, BPF_n -> Xp  (cross-coupled = sign inversion)
+* ============================================================
+
+* FDA1 summing node +
+R1p     hpf_p   Xp    100k
+R3p     LPF_p   Xp    100k
+Rqp     BPF_p   Xp    141k
+Rbias1p CM      Xp    100Meg
+C1p     BPF_n   Xp    160n
+
+* FDA1 summing node -
+R1n     hpf_n   Xn    100k
+R3n     LPF_n   Xn    100k
+Rqn     BPF_n   Xn    141k
+Rbias1n CM      Xn    100Meg
+C1n     BPF_p   Xn    160n
+
+* FDA1 — outputs swapped for inversion
+XFDA1 Xp Xn BPF_n BPF_p VDD GND Vb1 Vb2 Vb3_1 Vbias FDA
+
+* FDA2 summing node
+R2p     BPF_p   Yp    100k
+Rbias2p CM      Yp    100Meg
+C2p     LPF_n   Yp    160n
+
+R2n     BPF_n   Yn    100k
+Rbias2n CM      Yn    100Meg
+C2n     LPF_p   Yn    160n
+
+* FDA2 — outputs swapped for inversion
+XFDA2 Yp Yn LPF_n LPF_p VDD GND Vb1 Vb2 Vb3_2 Vbias FDA
+
+.ic v(BPF_p)=1.7 v(BPF_n)=1.7
+.ic v(LPF_p)=1.7 v(LPF_n)=1.7
+.ic v(Xp)=1.2 v(Xn)=1.2
+.ic v(Yp)=1.2 v(Yn)=1.2
+.ic v(hpf_p)=1.2 v(hpf_n)=1.2
+
+.ac dec 20 0.001 1k
+
+.control
+run
+let Vdiff_hpf = v(hpf_p) - v(hpf_n)
+let Vdiff_bpf = v(BPF_p) - v(BPF_n)
+let Vdiff_lpf = v(LPF_p) - v(LPF_n)
+plot db(Vdiff_hpf) title "Passive HPF fc=0.1Hz"
+plot db(Vdiff_lpf) title "Tow-Thomas LPF fc=10Hz"
+plot db(Vdiff_hpf) db(Vdiff_lpf) title "HPF+LPF Bandpass"
+.endc
+.end

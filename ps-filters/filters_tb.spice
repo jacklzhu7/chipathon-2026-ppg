@@ -1,0 +1,21 @@
+.title HPF + LPF Testbench — Off-chip passive RC
+
+* HPF: R=1Meg, C=1.5uF -> fc = 0.1 Hz
+* LPF: R=10k,  C=1.5uF -> fc = 10 Hz
+
+Vin   in   GND  AC 1
+
+R_hpf in   mid  1Meg
+C_hpf mid  GND  1.5u
+
+R_lpf mid  out  10k
+C_lpf out  GND  1.5u
+
+.ac dec 100 0.01 10k
+
+.control
+run
+plot db(v(mid)) xlabel "Frequency (Hz)" title "HPF response"
+plot db(v(out)) xlabel "Frequency (Hz)" title "Bandpass HPF+LPF response"
+.endc
+.end
