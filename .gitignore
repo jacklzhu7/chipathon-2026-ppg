@@ -9,3 +9,5 @@ img/
 .ipynb_checkpoints/
 *.spice
 !*_tb.spice
+*.tmp
+.spiceinit
