@@ -7,7 +7,4 @@ final/
 img/
 *.lyrdb
 .ipynb_checkpoints/
-*.spice
-!*_tb.spice
-*.tmp
-.spiceinit
+.DS_Store
