@@ -59,7 +59,7 @@ N 860 -480 860 -430 {lab=Vout}
 N 860 -240 860 -190 {lab=0}
 N 850 -360 860 -360 {lab=Vout
 }
-N 770 -360 790 -360 {lab=Vout
+N 770 -360 790 -360 {lab=#net3
 }
 N 690 -360 710 -360 {lab=Vout1
 }
@@ -71,10 +71,9 @@ N 550 -390 640 -390 {lab=VDD}
 N 640 -410 640 -390 {lab=VDD}
 N 640 -410 690 -410 {lab=VDD}
 N 770 -300 770 -270 {lab=Vout1}
-N 790 -360 850 -360 {lab=Vout}
 C {symbols/nfet_03v3.sym} 510 -250 0 1 {name=M1
 L=1u
-W=1u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -88,7 +87,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 670 -250 0 0 {name=M2
 L=1u
-W=1u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -102,7 +101,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 570 -510 0 0 {name=M3
 L=1u
-W=14.7u
+W=29.4u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -116,7 +115,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 470 -410 0 0 {name=M4
 L=1u
-W=7.4u
+W=14.8u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -130,7 +129,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 710 -410 0 1 {name=M5
 L=1u
-W=7.4u
+W=14.8u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -144,7 +143,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 840 -510 0 0 {name=M6
 L=0.5u
-W=12.1u
+W=14u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -157,7 +156,7 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 840 -300 0 0 {name=M7
-L=0.28u
+L=0.3u
 W=0.97u
 nf=1
 m=1
@@ -172,7 +171,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 340 -510 0 0 {name=M8
 L=1u
-W=14.7u
+W=29.4u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -202,11 +201,11 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/smbb000149.ngspice typical
 "}
-C {vsource.sym} 20 -360 0 0 {name=V2 value="1.65 AC 0.5" savecurrent=false
+C {vsource.sym} 20 -360 0 0 {name=V2 value="1.7 AC 0.5" savecurrent=false
 }
 C {gnd.sym} 20 -330 0 0 {name=l31 lab=0
 }
-C {vsource.sym} 120 -360 0 0 {name=V10 value="1.65 AC -0.5" savecurrent=false
+C {vsource.sym} 120 -360 0 0 {name=V10 value="1.7 AC -0.5" savecurrent=false
 }
 C {gnd.sym} 120 -330 0 0 {name=l8 lab=0
 }
@@ -272,4 +271,10 @@ m=1
 value=3p
 footprint=1206
 device="ceramic capacitor"
+}
+C {res.sym} 820 -360 3 0 {name=R11
+value=11k
+footprint=1206
+device=resistor
+m=1
 }

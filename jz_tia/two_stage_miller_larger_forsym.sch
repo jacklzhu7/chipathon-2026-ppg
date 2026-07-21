@@ -71,7 +71,7 @@ N 700 -200 700 -140 {lab=GND}
 N 670 -400 670 -370 {lab=VDD}
 C {symbols/nfet_03v3.sym} 590 -260 0 1 {name=M1
 L=1u
-W=1u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -85,7 +85,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 750 -260 0 0 {name=M2
 L=1u
-W=1u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -99,7 +99,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 650 -520 0 0 {name=M3
 L=1u
-W=14.7u
+W=29.4u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -113,7 +113,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 550 -420 0 0 {name=M4
 L=1u
-W=7.4u
+W=14.8u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -127,7 +127,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 790 -420 0 1 {name=M5
 L=1u
-W=7.4u
+W=14.8u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -141,7 +141,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 920 -520 0 0 {name=M6
 L=0.5u
-W=12.1u
+W=14u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -154,7 +154,7 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 920 -310 0 0 {name=M7
-L=0.28u
+L=0.3u
 W=0.97u
 nf=1
 m=1
@@ -169,7 +169,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 420 -520 0 0 {name=M8
 L=1u
-W=14.7u
+W=29.4u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -195,7 +195,7 @@ descr="gds="
 }
 C {capa.sym} 820 -370 3 0 {name=C1
 m=1
-value=5p
+value=3p
 footprint=1206
 device="ceramic capacitor"
 }

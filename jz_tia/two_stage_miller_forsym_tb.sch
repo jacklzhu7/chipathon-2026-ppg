@@ -42,6 +42,7 @@ write ac_miller.raw
 plot vdb(Vout)
 let phase = 180*cph(v(Vout))/pi
 plot phase
+meas ac dc_gain find vdb(Vout) at=1
 meas ac pm_deg find phase when vdb(Vout)=0
 print pm_deg + 180
 meas ac 0db_f when vdb(Vout)=0
@@ -56,10 +57,14 @@ C {lab_pin.sym} 430 -440 0 0 {name=p2 sig_type=std_logic lab=Vinn}
 C {lab_pin.sym} 840 -470 0 1 {name=p3 sig_type=std_logic lab=Vout}
 C {capa.sym} 840 -440 0 0 {name=C4
 m=1
-value=20p
+value=0.5p
 footprint=1206
 device="ceramic capacitor"
 }
 C {gnd.sym} 840 -410 0 0 {name=l30 lab=0
 }
-C {chipathon-2026-ppg/jz_tia/two_stage_miller_forsym.sym} 590 -430 0 0 {name=x1}
+C {launcher.sym} 650 -740 0 0 {name=h1
+descr=Backannotate
+tclcommand="cd ~/.xschem/simulations/
+xschem annotate_op oppoints.raw"}
+C {chipathon-2026-ppg/jz_tia/two_stage_miller_larger_forsym.sym} 590 -470 0 0 {name=x1}
