@@ -26,7 +26,7 @@ N 750 -280 750 -220 {lab=Voutn}
 N 930 -280 930 -220 {lab=Voutp}
 N 930 -390 930 -340 {lab=#net4
 }
-N 790 -420 890 -420 {lab=V4
+N 790 -420 890 -420 {lab=Vb4
 }
 N 710 -420 750 -420 {lab=VDD
 }
@@ -64,7 +64,7 @@ N 230 -250 270 -250 {lab=Vinn}
 N 560 -250 600 -250 {lab=Vinp}
 N 710 -190 750 -190 {lab=GND}
 N 930 -190 960 -190 {lab=GND}
-N 830 -450 830 -420 {lab=V4
+N 830 -450 830 -420 {lab=Vb4
 }
 N 830 -330 830 -310 {lab=Vb1
 }
@@ -113,7 +113,7 @@ N 830 -530 830 -480 {lab=VDD}
 N 850 -30 850 10 {lab=GND}
 N 840 -220 840 -190 {lab=Vb2}
 N 830 -90 830 -60 {lab=Vb3}
-C {symbols/nfet_03v3.sym} 910 -90 0 0 {name=M5
+C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 910 -90 0 0 {name=M5
 L=0.28u
 W=13u
 nf=1
