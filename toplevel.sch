@@ -49,7 +49,6 @@ N 870 -240 940 -240 {lab=#net4}
 N 940 -410 940 -240 {lab=#net4}
 N 940 -240 1050 -240 {lab=#net4}
 N 940 -220 1020 -220 {lab=#net1}
-N 1050 -240 1080 -240 {lab=#net4}
 N 660 -380 660 -320 {lab=Vb1}
 N 680 -360 680 -320 {lab=Vb2}
 N 780 -410 940 -410 {lab=#net4}
@@ -87,15 +86,14 @@ N 180 -570 180 -540 {lab=Vb4
 }
 N 170 -570 180 -570 {lab=Vb4
 }
-N 1020 -220 1080 -220 {lab=#net1}
-N 1080 -220 1080 -200 {lab=#net1}
-N 1140 -400 1140 -300 {lab=VDD}
-N 1180 -370 1180 -300 {lab=Vb1}
-N 1220 -370 1220 -300 {lab=Vb2}
-N 1260 -370 1260 -300 {lab=Vb3}
-N 1300 -370 1300 -300 {lab=Vb4}
-N 1340 -390 1340 -300 {lab=#net6}
-N 1340 -390 1410 -390 {lab=#net6}
+N 1070 -580 1070 -560 {lab=#net6}
+N 1130 -760 1130 -660 {lab=VDD}
+N 1170 -730 1170 -660 {lab=Vb1}
+N 1210 -730 1210 -660 {lab=Vb2}
+N 1250 -730 1250 -660 {lab=Vb3}
+N 1290 -730 1290 -660 {lab=Vb4}
+N 1330 -750 1330 -660 {lab=#net7}
+N 1330 -750 1400 -750 {lab=#net7}
 N 170 -200 230 -200 {lab=#net13
 spice_ignore=true}
 N 230 -240 230 -200 {lab=#net13
@@ -109,10 +107,77 @@ N 380 -210 380 -180 {lab=Vinp
 }
 N 380 -210 420 -210 {lab=Vinp}
 N 320 -240 420 -240 {lab=Vinn}
-N 1580 -340 1580 -280 {lab=VDD}
-N 1680 -220 1750 -220 {lab=Vout}
-N 1400 -240 1520 -240 {lab=#net7}
-N 1400 -200 1520 -200 {lab=#net8}
+N 3010 -350 3010 -290 {lab=VDD}
+N 3150 -220 3220 -220 {lab=Vout}
+N 1390 -560 1450 -560 {lab=#net8}
+N 1450 -600 1450 -560 {lab=#net8}
+N 2860 -250 2920 -250 {lab=Voutn}
+N 1390 -600 1430 -600 {lab=#net9}
+N 2840 -200 2920 -200 {lab=Voutp}
+N 1430 -600 1430 -550 {lab=#net9}
+N 2480 -250 2800 -250 {lab=Voutp}
+N 2800 -250 2800 -200 {lab=Voutp}
+N 2800 -200 2840 -200 {lab=Voutp}
+N 2480 -230 2860 -230 {lab=Voutn}
+N 2860 -250 2860 -230 {lab=Voutn}
+N 1620 -230 1690 -230 {lab=#net10}
+N 1690 -230 1690 -80 {lab=#net10}
+N 1310 -220 1380 -220 {lab=#net11}
+N 1310 -250 1380 -250 {lab=#net12}
+N 1310 -420 1310 -270 {lab=#net12}
+N 1620 -250 1690 -250 {lab=#net13}
+N 1690 -420 1690 -250 {lab=#net13}
+N 1690 -230 1770 -230 {lab=#net10}
+N 1410 -390 1410 -330 {lab=Vb1}
+N 1430 -370 1430 -330 {lab=Vb2}
+N 1530 -420 1690 -420 {lab=#net13}
+N 1310 -420 1470 -420 {lab=#net12}
+N 1530 -80 1690 -80 {lab=#net10}
+N 1310 -80 1470 -80 {lab=#net11}
+N 1270 -250 1310 -250 {lab=#net12}
+N 1270 -220 1310 -220 {lab=#net11}
+N 1170 -220 1210 -220 {lab=#net4}
+N 1310 -270 1310 -250 {lab=#net12}
+N 1310 -220 1310 -80 {lab=#net11}
+N 1450 -360 1450 -330 {lab=Vb3}
+N 1470 -350 1470 -330 {lab=Vb4}
+N 1560 -390 1560 -290 {lab=#net14}
+N 1560 -390 1620 -390 {lab=#net14}
+N 1170 -250 1210 -250 {lab=#net1}
+N 1770 -230 1790 -230 {lab=#net10}
+N 1690 -250 1790 -250 {lab=#net13}
+N 1050 -240 1050 -220 {lab=#net4}
+N 1050 -220 1170 -220 {lab=#net4}
+N 1020 -250 1170 -250 {lab=#net1}
+N 1020 -250 1020 -220 {lab=#net1}
+N 2320 -230 2390 -230 {lab=Voutn}
+N 2390 -230 2390 -80 {lab=Voutn}
+N 2010 -220 2080 -220 {lab=#net15}
+N 2010 -250 2080 -250 {lab=#net16}
+N 2010 -420 2010 -270 {lab=#net16}
+N 2320 -250 2390 -250 {lab=Voutp}
+N 2390 -420 2390 -250 {lab=Voutp}
+N 2390 -230 2470 -230 {lab=Voutn}
+N 2110 -390 2110 -330 {lab=Vb1}
+N 2130 -370 2130 -330 {lab=Vb2}
+N 2230 -420 2390 -420 {lab=Voutp}
+N 2010 -420 2170 -420 {lab=#net16}
+N 2230 -80 2390 -80 {lab=Voutn}
+N 2010 -80 2170 -80 {lab=#net15}
+N 1970 -250 2010 -250 {lab=#net16}
+N 1970 -220 2010 -220 {lab=#net15}
+N 1870 -220 1910 -220 {lab=#net13}
+N 2010 -270 2010 -250 {lab=#net16}
+N 2010 -220 2010 -80 {lab=#net15}
+N 2150 -360 2150 -330 {lab=Vb3}
+N 2170 -350 2170 -330 {lab=Vb4}
+N 2260 -390 2260 -290 {lab=#net17}
+N 2260 -390 2320 -390 {lab=#net17}
+N 1870 -250 1910 -250 {lab=#net10}
+N 1790 -250 1870 -220 {lab=#net13}
+N 1790 -230 1870 -250 {lab=#net10}
+N 2390 -250 2480 -250 {lab=Voutp}
+N 2470 -230 2480 -230 {lab=Voutn}
 C {isource.sym} -500 -360 0 0 {name=I0 value=25u
 spice_ignore=true}
 C {gnd.sym} -500 -330 0 0 {name=l1 lab=0
@@ -182,7 +247,7 @@ C {lab_pin.sym} 700 -350 3 1 {name=p8 sig_type=std_logic lab=Vb3
 }
 C {gnd.sym} 870 -320 0 0 {name=l9 lab=0
 }
-C {chipathon-2026-ppg/ps-filters/lpf.sym} 1240 -220 0 0 {name=X4}
+C {chipathon-2026-ppg/ps-filters/lpf.sym} 1230 -580 0 0 {name=X4}
 C {gnd.sym} -770 -530 0 0 {name=l31 lab=0
 spice_ignore=true}
 C {lab_pin.sym} -770 -620 0 0 {name=p11 sig_type=std_logic lab=Iin
@@ -201,8 +266,9 @@ C {code_shown.sym} -580 -660 0 0 {name=SPICE1 only_toplevel=false value=".option
 op
 write oppoints.raw
 tran 0.1s 10s
-plot Vout Vinp
+plot Vout
 plot Vinp Vinn
+plot Voutp Voutn
 .endc"
 }
 C {vsource.sym} -90 -530 0 0 {name=V9 value=1.4 savecurrent=false
@@ -229,19 +295,19 @@ C {gnd.sym} 180 -480 0 0 {name=l17 lab=0
 }
 C {lab_pin.sym} 170 -570 0 0 {name=p17 sig_type=std_logic lab=Vb4
 }
-C {gnd.sym} 1240 -140 0 0 {name=l6 lab=0
+C {gnd.sym} 1230 -500 0 0 {name=l6 lab=0
 }
-C {lab_pin.sym} 1180 -370 0 0 {name=p5 sig_type=std_logic lab=Vb1
+C {lab_pin.sym} 1170 -730 0 0 {name=p5 sig_type=std_logic lab=Vb1
 }
-C {lab_pin.sym} 1220 -370 3 1 {name=p6 sig_type=std_logic lab=Vb2
+C {lab_pin.sym} 1210 -730 3 1 {name=p6 sig_type=std_logic lab=Vb2
 }
-C {lab_pin.sym} 1260 -370 3 1 {name=p12 sig_type=std_logic lab=Vb3
+C {lab_pin.sym} 1250 -730 3 1 {name=p12 sig_type=std_logic lab=Vb3
 }
-C {lab_pin.sym} 1300 -370 0 1 {name=p13 sig_type=std_logic lab=Vb4
+C {lab_pin.sym} 1290 -730 0 1 {name=p13 sig_type=std_logic lab=Vb4
 }
-C {isource.sym} 1410 -360 0 0 {name=I3 value=25u
+C {isource.sym} 1400 -720 0 0 {name=I3 value=25u
 }
-C {gnd.sym} 1410 -330 0 0 {name=l12 lab=0
+C {gnd.sym} 1400 -690 0 0 {name=l12 lab=0
 }
 C {vsource.sym} 320 -180 0 0 {name=V3 value="SIN(1.7 -1m 1)" savecurrent=false
 }
@@ -251,13 +317,13 @@ C {vsource.sym} 380 -150 0 0 {name=V4 value="SIN(1.7 1m 1)" savecurrent=false
 }
 C {gnd.sym} 380 -120 0 0 {name=l18 lab=0
 }
-C {chipathon-2026-ppg/comparator/schematic-design/comp_forsym.sym} 1580 -220 0 0 {name=x5}
-C {gnd.sym} 1580 -150 0 0 {name=l20 lab=0
+C {chipathon-2026-ppg/comparator/schematic-design/comp_forsym.sym} 3020 -220 0 0 {name=x5}
+C {gnd.sym} 3010 -140 0 0 {name=l20 lab=0
 }
-C {lab_pin.sym} 1750 -220 0 1 {name=p3 sig_type=std_logic lab=Vout
+C {lab_pin.sym} 3220 -220 0 1 {name=p3 sig_type=std_logic lab=Vout
 }
-C {vdd.sym} 1140 -400 0 0 {name=l10 lab=VDD}
-C {vdd.sym} 1580 -340 0 0 {name=l19 lab=VDD}
+C {vdd.sym} 1130 -760 0 0 {name=l10 lab=VDD}
+C {vdd.sym} 3010 -350 0 0 {name=l19 lab=VDD}
 C {code.sym} 300 -640 0 0 {name=MODELS only_toplevel=true  
 format="tcleval( @value )" 
 value="
@@ -268,4 +334,80 @@ value="
 C {lab_pin.sym} 430 -210 1 1 {name=p9 sig_type=std_logic lab=Vinp
 }
 C {lab_pin.sym} 400 -240 3 1 {name=p10 sig_type=std_logic lab=Vinn
+}
+C {lab_pin.sym} 2550 -230 1 1 {name=p18 sig_type=std_logic lab=Voutn
+}
+C {lab_pin.sym} 2550 -250 3 1 {name=p19 sig_type=std_logic lab=Voutp
+}
+C {lab_pin.sym} 1430 -370 3 1 {name=p20 sig_type=std_logic lab=Vb2
+}
+C {lab_pin.sym} 1410 -390 0 0 {name=p21 sig_type=std_logic lab=Vb1
+}
+C {vdd.sym} 1500 -310 0 0 {name=l21 lab=VDD}
+C {isource.sym} 1620 -360 0 0 {name=I4 value=25u
+}
+C {gnd.sym} 1500 -170 0 0 {name=l22 lab=0
+}
+C {res.sym} 1500 -420 1 0 {name=R6
+value=158k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 1500 -80 1 0 {name=R7
+value=158k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 1240 -220 1 0 {name=R8
+value=5k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 1240 -250 1 0 {name=R9
+value=5k
+footprint=1206
+device=resistor
+m=1}
+C {chipathon-2026-ppg/jz_fda2/foldedcasc_cmfb_forsym.sym} 1510 -40 0 0 {name=x6}
+C {lab_pin.sym} 1470 -350 0 1 {name=p22 sig_type=std_logic lab=Vb4
+}
+C {lab_pin.sym} 1450 -360 3 1 {name=p23 sig_type=std_logic lab=Vb3
+}
+C {gnd.sym} 1620 -330 0 0 {name=l23 lab=0
+}
+C {lab_pin.sym} 2130 -370 3 1 {name=p24 sig_type=std_logic lab=Vb2
+}
+C {lab_pin.sym} 2110 -390 0 0 {name=p25 sig_type=std_logic lab=Vb1
+}
+C {vdd.sym} 2200 -310 0 0 {name=l24 lab=VDD}
+C {isource.sym} 2320 -360 0 0 {name=I5 value=25u
+}
+C {gnd.sym} 2200 -170 0 0 {name=l25 lab=0
+}
+C {res.sym} 2200 -420 1 0 {name=R10
+value=158k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 2200 -80 1 0 {name=R11
+value=158k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 1940 -220 1 0 {name=R12
+value=5k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 1940 -250 1 0 {name=R13
+value=5k
+footprint=1206
+device=resistor
+m=1}
+C {chipathon-2026-ppg/jz_fda2/foldedcasc_cmfb_forsym.sym} 2210 -40 0 0 {name=x7}
+C {lab_pin.sym} 2170 -350 0 1 {name=p26 sig_type=std_logic lab=Vb4
+}
+C {lab_pin.sym} 2150 -360 3 1 {name=p27 sig_type=std_logic lab=Vb3
+}
+C {gnd.sym} 2320 -330 0 0 {name=l26 lab=0
 }
