@@ -1,29 +1,24 @@
 v {xschem version=3.4.8RC file_version=1.3}
-G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
 spectre_format="@name ( @pinlist ) @symname"
 template="name=x1"
 }
-V {}
-S {}
-F {}
-E {}
-L 4 0 -60 0 -40 {}
-L 4 80 0 100 0 {}
-L 4 -80 -20 -60 -20 {}
-L 4 -80 20 -60 20 {}
-L 4 0 50 0 70 {}
-B 5 -2.5 -62.5 2.5 -57.5 {name=VDD dir=in}
-B 5 97.5 -2.5 102.5 2.5 {name=Vout dir=out}
-B 5 -62.5 -22.5 -57.5 -17.5 {name=Vref dir=in}
-B 5 -62.5 17.5 -57.5 22.5 {name=Vin dir=in}
-B 5 -2.5 67.5 2.5 72.5 {name=GND dir=in}
-P 4 4 -80 -80 -80 90 80 0 -80 -80 {}
-T {@Comparator} -67.5 -6 0 0 0.3 0.3 {}
+T {@symname} -67.5 -6 0 0 0.3 0.3 {}
 T {@name} 135 -52 0 0 0.2 0.2 {}
-T {VDD} 4 -35 1 0 0.2 0.2 {}
-T {Vout} 75 -4 0 1 0.2 0.2 {}
-T {Vref} -85 -16 2 0 0.2 0.2 {}
-T {Vin} -85 24 2 0 0.2 0.2 {}
-T {GND} -4 45 3 0 0.2 0.2 {}
+P 4 5 130 -40 -130 -40 -130 40 130 40 130 -40 {}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=VDD dir=in}
+L 4 -150 -30 -130 -30 {}
+T {VDD} -125 -34 0 0 0.2 0.2 {}
+B 5 147.5 -32.5 152.5 -27.5 {name=Vout dir=out}
+L 4 130 -30 150 -30 {}
+T {Vout} 125 -34 0 1 0.2 0.2 {}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=Vinn dir=in}
+L 4 -150 -10 -130 -10 {}
+T {Vinn} -125 -14 0 0 0.2 0.2 {}
+B 5 -152.5 7.5 -147.5 12.5 {name=Vinp dir=in}
+L 4 -150 10 -130 10 {}
+T {Vinp} -125 6 0 0 0.2 0.2 {}
+B 5 -152.5 27.5 -147.5 32.5 {name=GND dir=in}
+L 4 -150 30 -130 30 {}
+T {GND} -125 26 0 0 0.2 0.2 {}
