@@ -1,0 +1,54 @@
+.title MFB HPF 2nd-order — fc=0.1Hz Butterworth, differential FDA
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/designs/sscs-chipathon-2026/filters/foldedcasc_fda.spice
+
+* Butterworth MFB HPF, C1=C2=C3=C, gain=1, fc=0.1Hz
+.param fc=0.1 Q=0.70710678
+.param w0='2*3.14159265358979*fc'
+.param C=1u
+.param R2='3*Q/(w0*C)'
+.param R1='R2/(9*Q*Q)'
+
+VVDD VDD GND 3.3
+VVb1 Vb1 GND 1.4
+VVb2 Vb2 GND 1.6
+VVb3 Vb3 GND 0.8
+VVb4 Vb4 GND 2.3
+IB   ibn GND dc 25u
+VCM  CM  GND dc 1.7
+
+Vip in_p GND dc 1.7 ac 0.5
+Vin in_n GND dc 1.7 ac -0.5
+
+* positive half: node ap = C-R junction, sp = summing node -> Vinp
+* feedback from out_n (crossed, matches verified convention)
+C1p in_p ap    {C}
+R1p ap   CM    {R1}
+C2p ap   sp    {C}
+C3p ap   out_n {C}
+R2p sp   out_n {R2}
+
+* negative half: sn -> Vinn, feedback from out_p
+C1n in_n an    {C}
+R1n an   CM    {R1}
+C2n an   sn    {C}
+C3n an   out_p {C}
+R2n sn   out_p {R2}
+
+XFDA1 VDD Vb2 out_p out_n Vb1 ibn sn GND sp Vb3 Vb4 foldedcasc_cmfb_forsym
+
+.ic v(out_p)=1.7 v(out_n)=1.7 v(sp)=1.7 v(sn)=1.7 v(ap)=1.7 v(an)=1.7
+
+.control
+ac dec 40 0.0001 1k
+let vdiff = v(out_p)-v(out_n)
+let vdb = db(vdiff)
+meas ac fc_3db   WHEN vdb=-3
+meas ac gpass    FIND vdb AT=10
+meas ac roll001  FIND vdb AT=0.01
+echo "R1 R2 C:"
+print R1 R2 C
+plot vdb title "MFB HPF 2nd order"
+.endc
+.end

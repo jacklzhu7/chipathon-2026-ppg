@@ -1,4 +1,4 @@
-.title LPF standalone — fc=10Hz check
+.title LPF 2nd-order MFB — schematic check
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .include /foss/designs/sscs-chipathon-2026/filters/lpf.spice
@@ -13,13 +13,15 @@ IB Ibias25u GND dc 25u
 Vip in_p GND dc 1.7 ac 0.5
 Vin in_n GND dc 1.7 ac -0.5
 
-.ic v(out_p)=1.7 v(out_n)=1.7 v(Xp)=1.7 v(Xn)=1.7
+.ic v(out_p)=1.7 v(out_n)=1.7 v(sp)=1.7 v(sn)=1.7 v(ap)=1.7 v(an)=1.7
 
-.ac dec 20 0.001 1k
 .control
-run
+ac dec 40 0.01 10k
 let vdiff = v(out_p)-v(out_n)
-plot db(vdiff) title "LPF standalone"
-meas ac fc WHEN db(vdiff)=-3
+let vdb = db(vdiff)
+meas ac fc_3db  WHEN vdb=-3
+meas ac gpass   FIND vdb AT=0.1
+meas ac roll100 FIND vdb AT=100
+plot vdb title "LPF 2nd order from schematic"
 .endc
 .end

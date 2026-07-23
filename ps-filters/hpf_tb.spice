@@ -1,17 +1,28 @@
-.title HPF standalone with 1Meg loads (emulating LPF R1) — fc=0.1Hz check
+.title HPF 2nd-order MFB — schematic check
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .include /foss/designs/sscs-chipathon-2026/filters/hpf.spice
-VCM CM GND dc 1.7
+
+VVDD VDD GND dc 3.3
+VVb1 Vb1 GND dc 1.4
+VVb2 Vb2 GND dc 1.6
+VVb3 Vb3 GND dc 0.8
+VVb4 Vb4 GND dc 2.3
+VCM  CM  GND dc 1.7
+IB Ibias25u GND dc 25u
+
 Vip in_p GND dc 1.7 ac 0.5
 Vin in_n GND dc 1.7 ac -0.5
-* emulate LPF input: R1=1Meg into virtual ground at CM potential
-Rload_p out_p CM 1Meg
-Rload_n out_n CM 1Meg
-.ac dec 20 0.001 1k
+
+.ic v(out_p)=1.7 v(out_n)=1.7 v(sp)=1.7 v(sn)=1.7 v(ap)=1.7 v(an)=1.7
+
 .control
-run
+ac dec 40 0.0001 1k
 let vdiff = v(out_p)-v(out_n)
 let vdb = db(vdiff)
-plot vdb title "HPF loaded by 1Meg"
-meas ac fc WHEN vdb=-3
+meas ac fc_3db  WHEN vdb=-3
+meas ac gpass   FIND vdb AT=10
+meas ac roll001 FIND vdb AT=0.01
+plot vdb title "HPF 2nd order from schematic"
 .endc
 .end
