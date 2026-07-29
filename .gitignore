@@ -1,10 +1,17 @@
 runs/
 __pycache__/
 gf180mcu/
-gf180_drc.lyrdb
 sim_build/
 final/
 img/
-*.lyrdb
 .ipynb_checkpoints/
 .DS_Store
+# generated netlists (keep testbenches)
+*.spice
+!*_tb.spice
+# tool cruft
+.spiceinit
+*.tmp
+*.klib
+# DRC/LVS report DBs are ignored by default, but we force-add the LED driver's on purpose
+*.lyrdb
