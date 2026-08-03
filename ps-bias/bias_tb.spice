@@ -1,0 +1,38 @@
+.title Bias mirror - 5x 25uA + 1x 5uA, simple NMOS mirror
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+
+VDD VDD GND 3.3
+
+* --- reference leg: R from VDD into diode-connected M0 (5 units) ---
+Rref VDD iref 102.7k
+XM0 iref iref GND GND nfet_03v3 W=2u L=1u nf=1 m=5
+
+* --- 25uA outputs: 5 units each, drains held at test voltages via ammeter sources ---
+XO1 d1 iref GND GND nfet_03v3 W=2u L=1u nf=1 m=5
+XO2 d2 iref GND GND nfet_03v3 W=2u L=1u nf=1 m=5
+XO3 d3 iref GND GND nfet_03v3 W=2u L=1u nf=1 m=5
+XO4 d4 iref GND GND nfet_03v3 W=2u L=1u nf=1 m=5
+XO5 d5 iref GND GND nfet_03v3 W=2u L=1u nf=1 m=5
+* --- 5uA output: 1 unit ---
+XO6 d6 iref GND GND nfet_03v3 W=2u L=1u nf=1 m=1
+
+* load-emulating sources on each drain (measure current, set a realistic pin voltage)
+Vd1 VDD d1 0.8
+Vd2 VDD d2 0.8
+Vd3 VDD d3 0.8
+Vd4 VDD d4 0.8
+Vd5 VDD d5 0.8
+Vd6 VDD d6 0.8
+
+.control
+op
+let iref = (v(VDD)-v(iref))/100e3
+echo "--- reference ---"
+print iref v(iref)
+echo "--- 25uA outputs (should be ~25u each) ---"
+print i(Vd1) i(Vd2) i(Vd3) i(Vd4) i(Vd5)
+echo "--- 5uA output (should be ~5u) ---"
+print i(Vd6)
+.endc
+.end

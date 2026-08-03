@@ -1,0 +1,23 @@
+.title Bias mirror - schematic check
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/designs/sscs-chipathon-2026/bias/bias.spice
+
+VDD VDD GND 3.3
+Xbias Ibias25u_0 Ibias25u_1 Ibias25u_2 Ibias25u_3 Ibias25u_4 Ibias5u VDD GND bias
+
+Vd1 VDD Ibias25u_0 0.8
+Vd2 VDD Ibias25u_1 0.8
+Vd3 VDD Ibias25u_2 0.8
+Vd4 VDD Ibias25u_3 0.8
+Vd5 VDD Ibias25u_4 0.8
+Vd6 VDD Ibias5u 0.8
+
+.control
+op
+echo "--- 25uA outputs ---"
+print i(Vd1) i(Vd2) i(Vd3) i(Vd4) i(Vd5)
+echo "--- 5uA output ---"
+print i(Vd6)
+.endc
+.end
