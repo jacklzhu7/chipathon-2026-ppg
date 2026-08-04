@@ -5,7 +5,7 @@ V {}
 S {}
 E {}
 T {Bias current mirror: 5x Ibias25u + 1x Ibias5u} 40 -640 0 0 0.4 0.4 {}
-T {Rref sim-trim 102.7k -> Iref=25uA. Big devices W=10u(=5 units), 5uA device W=2u} 40 -610 0 0 0.25 0.25 {}
+T {Ref NMOS W=1u L=4.8u g+d=VDD sets 25uA. 25uA devs W=10u nf=5, 5uA W=2.10u} 40 -610 0 0 0.25 0.25 {}
 N 100 -520 100 -490 {lab=VDD}
 N 100 -430 100 -370 {lab=iref}
 N 60 -385 100 -385 {lab=iref}
@@ -13,7 +13,18 @@ N 60 -385 60 -340 {lab=iref}
 N 100 -310 100 -280 {lab=GND}
 C {devices/vdd.sym} 100 -520 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 100 -280 0 0 {name=l2 lab=GND}
-C {devices/res.sym} 100 -460 0 0 {name=Rref value=102.7k footprint=none device=resistor}
+C {symbols/nfet_03v3.sym} 150 -450 0 0 {name=XR
+L=4.8u
+W=1u
+nf=1
+m=1
+model=nfet_03v3
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 130 -450 0 1 {name=xrg lab=VDD}
+C {devices/lab_pin.sym} 170 -480 0 0 {name=xrd lab=VDD}
+C {devices/lab_pin.sym} 170 -420 0 0 {name=xrs lab=iref}
+C {devices/lab_pin.sym} 170 -450 0 0 {name=xrb lab=GND}
 C {symbols/nfet_03v3.sym} 80 -340 0 0 {name=XM0
 L=1u
 W=10u

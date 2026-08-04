@@ -4,7 +4,7 @@
 .include /foss/designs/sscs-chipathon-2026/bias/bias.spice
 
 VDD VDD GND 3.3
-Xbias Ibias25u_0 Ibias25u_1 Ibias25u_2 Ibias25u_3 Ibias25u_4 Ibias5u VDD GND bias
+Xbias VDD GND Ibias25u_0 Ibias25u_1 Ibias25u_2 Ibias25u_3 Ibias25u_4 Ibias5u bias
 
 Vd1 VDD Ibias25u_0 0.8
 Vd2 VDD Ibias25u_1 0.8
