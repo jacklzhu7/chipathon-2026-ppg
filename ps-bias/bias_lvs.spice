@@ -1,0 +1,10 @@
+.subckt bias VDD Ibias25u_0 Ibias25u_1 Ibias25u_2 Ibias25u_3 Ibias25u_4 Ibias5u
+M1 VDD VDD iref GND nfet_03v3 L=4.8u W=1u
+M2 iref iref GND GND nfet_03v3 L=1u W=10u
+M3 Ibias25u_0 iref GND GND nfet_03v3 L=1u W=10u
+M4 Ibias25u_1 iref GND GND nfet_03v3 L=1u W=10u
+M5 Ibias25u_2 iref GND GND nfet_03v3 L=1u W=10u
+M6 Ibias25u_3 iref GND GND nfet_03v3 L=1u W=10u
+M7 Ibias25u_4 iref GND GND nfet_03v3 L=1u W=10u
+M8 Ibias5u iref GND GND nfet_03v3 L=1u W=2.10u
+.ends
