@@ -16,4 +16,4 @@ project:
   team: "The Chip Wizards"                      # Your Team name
   discord: ""                   # Optional: Discord username (for support / communication)
   description: "PDK test data"  # Short one-line description
-  lvs_config: "<relative-path-to-lvs_config.json>"
+  lvs_config: "./lvs_config.json"
