@@ -1,0 +1,98 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1786614492
+<< error_s >>
+rect 1430 126 1453 180
+rect 1710 126 1733 180
+rect 1805 126 1828 180
+rect 2085 126 2108 180
+rect 2415 126 2438 180
+rect 2695 126 2718 180
+rect 2795 126 2818 180
+rect 3075 126 3098 180
+rect 3180 126 3203 180
+rect 3460 126 3483 180
+rect 3565 126 3588 180
+rect 3845 126 3868 180
+rect 755 -574 778 -520
+rect 1707 -574 1730 -520
+rect 1800 -574 1823 -520
+rect 2752 -574 2775 -520
+rect 1210 -974 1233 -920
+rect 1490 -974 1513 -920
+rect 1600 -974 1623 -920
+rect 1880 -974 1903 -920
+rect 3300 -974 3323 -920
+rect 3468 -974 3491 -920
+rect 3565 -974 3588 -920
+rect 3733 -974 3756 -920
+<< metal1 >>
+rect 0 0 100 100
+rect 0 -200 100 -100
+rect 0 -400 100 -300
+rect 0 -600 100 -500
+rect 0 -800 100 -700
+rect 0 -1000 100 -900
+use pfet_03v3_N6QUP2  M1
+timestamp 1786614492
+transform 0 1 1582 -1 0 153
+box -153 -217 153 217
+use pfet_03v3_N6QUP2  M2
+timestamp 1786614492
+transform 0 1 1957 -1 0 153
+box -153 -217 153 217
+use pfet_03v3_N6QUP2  M3
+timestamp 1786614492
+transform 0 1 2567 -1 0 153
+box -153 -217 153 217
+use pfet_03v3_N6QUP2  M4
+timestamp 1786614492
+transform 0 1 2947 -1 0 153
+box -153 -217 153 217
+use pfet_03v3_N6QUP2  M5
+timestamp 1786614492
+transform 0 1 3332 -1 0 153
+box -153 -217 153 217
+use pfet_03v3_N6QUP2  M6
+timestamp 1786614492
+transform 0 1 3717 -1 0 153
+box -153 -217 153 217
+use nfet_03v3_NKTEP8  M7
+timestamp 1786614492
+transform 0 1 3661 -1 0 -947
+box -153 -161 153 161
+use nfet_03v3_X7TWFW  M8
+timestamp 1786614492
+transform 0 1 1362 -1 0 -947
+box -153 -217 153 217
+use nfet_03v3_NKTEP8  M9
+timestamp 1786614492
+transform 0 1 3396 -1 0 -947
+box -153 -161 153 161
+use nfet_03v3_X7TWFW  M10
+timestamp 1786614492
+transform 0 1 1752 -1 0 -947
+box -153 -217 153 217
+use nfet_03v3_YF9RYW  M11
+timestamp 1786614492
+transform 0 1 1243 -1 0 -547
+box -153 -553 153 553
+use nfet_03v3_YF9RYW  M12
+timestamp 1786614492
+transform 0 1 2288 -1 0 -547
+box -153 -553 153 553
+<< labels >>
+flabel metal1 0 0 100 100 0 FreeSans 240 0 0 0 VDD
+port 0 nsew
+flabel metal1 0 -200 100 -100 0 FreeSans 240 0 0 0 Vout
+port 1 nsew
+flabel metal1 0 -400 100 -300 0 FreeSans 240 0 0 0 Vinn
+port 2 nsew
+flabel metal1 0 -600 100 -500 0 FreeSans 240 0 0 0 Ibias5u
+port 3 nsew
+flabel metal1 0 -800 100 -700 0 FreeSans 240 0 0 0 Vinp
+port 4 nsew
+flabel metal1 0 -1000 100 -900 0 FreeSans 240 0 0 0 GND
+port 5 nsew
+<< end >>

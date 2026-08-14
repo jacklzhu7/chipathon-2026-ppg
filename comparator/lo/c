@@ -1,0 +1,106 @@
+** sch_path: /foss/designs/sch-draft/co.sch
+**.subckt co Vout
+*.opin Vout
+XM1 net3 net3 VDD VDD pfet_03v3 L=0.56u W=2.24u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM2 net4 net3 VDD VDD pfet_03v3 L=0.56u W=8.96u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM3 net3 net4 VDD VDD pfet_03v3 L=0.56u W=8.96u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM4 net4 net4 VDD VDD pfet_03v3 L=0.56u W=2.24u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM5 Vout net4 VDD VDD pfet_03v3 L=0.56u W=2.24u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM6 net2 net3 VDD VDD pfet_03v3 L=0.56u W=2.24u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM7 net2 net2 0 GND nfet_03v3 L=0.56u W=1.12u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM8 net1 net1 0 GND nfet_03v3 L=0.56u W=2.24u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM9 Vout net2 0 GND nfet_03v3 L=0.56u W=1.12u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM10 net5 net1 0 GND nfet_03v3 L=0.56u W=2.24u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM11 net3 vref net5 GND nfet_03v3 L=0.56u W=8.96u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM12 net4 vin net5 GND nfet_03v3 L=0.56u W=8.96u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+I0 VDD net1 5u
+Vref vref 0 DC 1.7 SIN(1.7 20m 1k 0 0 180)
+Vin vin 0 DC 1.7 SIN(1.7 20m 1k)
+
+Vdd VDD 0 3.3
+C1 Vout 0 1p
+**** begin user architecture code
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+
+
+.control
+set noaskquit
+save v(vin) v(vref) v(vout) i(Vdd)
+
+* ============================================================
+* FIGURE 1 — DC TRANSFER / COMPARATOR SPECIFICATION
+* Current design: VDD=3.3 V, VREF=1.7 V
+* Sweep VIN around VREF. The output transition gives the trip point.
+* ============================================================
+set appendwrite
+alter @Vin[dc] = 1.7
+dc Vin 1.60 1.80 0.1m
+meas dc vtrip_up find v(vin) when v(vout)=1.65 rise=1
+write comparator_fig1_up.raw v(vin) v(vout)
+
+reset
+alter @Vin[dc] = 1.7
+dc Vin 1.80 1.60 -0.1m
+meas dc vtrip_down find v(vin) when v(vout)=1.65 fall=1
+write comparator_fig1_down.raw v(vin) v(vout)
+
+let vhyst_mV = abs(vtrip_up-vtrip_down)*1e3
+let vcenter = (vtrip_up+vtrip_down)/2
+let center_error_mV = (vcenter-1.7)*1e3
+print vtrip_up vtrip_down vhyst_mV vcenter center_error_mV
+
+* Open comparator_fig1_up.raw and comparator_fig1_down.raw together in
+* Xschem's graph viewer to reproduce the two switching thresholds.
+plot v(vout) vs v(vin) xlimit 1.60 1.80 ylimit -0.1 3.4
+
+* ============================================================
+* FIGURE 2 — TRANSIENT COMPARATOR RESPONSE
+* Replaces VIN by a sine centered at 1.7 V. VOUT should become square.
+* 0.2 V amplitude, 2 kHz, total time 4 ms.
+* ============================================================
+reset
+alter @Vin[dc] = 1.7
+alter @Vin[sin] = [ 1.7 0.2 2k 0 0 0 ]
+tran 0.5u 4m
+write comparator_fig2_tran.raw v(vin) v(vout)
+plot v(vin) v(vout) xlimit 0 4m ylimit -0.1 3.4
+
+* Propagation-delay measurements at VREF and VDD/2 output level
+meas tran tpd_rise trig v(vin) val=1.7 rise=2 targ v(vout) val=1.65 rise=2
+meas tran tpd_fall trig v(vin) val=1.7 fall=2 targ v(vout) val=1.65 fall=2
+let tpd_rise_us=tpd_rise*1e6
+let tpd_fall_us=tpd_fall*1e6
+print tpd_rise_us tpd_fall_us
+
+* ============================================================
+* FIGURE 3 — VOLTAGE/TEMPERATURE OVERLAY FOR CURRENT PROCESS CORNER
+* True TT/FF/SS must be run as separate netlists because .lib corner is
+* chosen while ngspice parses the circuit. The shell script supplied with
+* this file automates those three runs.
+* ============================================================
+reset
+alter @Vin[pulse] = [ 1.60 1.80 50u 1n 1n 180u 360u ]
+tran 0.1u 360u
+write comparator_fig3_current_corner.raw v(vin) v(vout)
+plot v(vin) v(vout) xlimit 0 360u ylimit -0.1 3.4
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.end
