@@ -1,0 +1,77 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1786670450
+<< pwell >>
+rect -362 -2002 362 2002
+<< nmos >>
+rect -112 -1792 112 1792
+<< ndiff >>
+rect -200 1779 -112 1792
+rect -200 -1779 -187 1779
+rect -141 -1779 -112 1779
+rect -200 -1792 -112 -1779
+rect 112 1779 200 1792
+rect 112 -1779 141 1779
+rect 187 -1779 200 1779
+rect 112 -1792 200 -1779
+<< ndiffc >>
+rect -187 -1779 -141 1779
+rect 141 -1779 187 1779
+<< psubdiff >>
+rect -338 1965 338 1978
+rect -338 1919 -222 1965
+rect 222 1919 338 1965
+rect -338 1906 338 1919
+rect -338 1862 -266 1906
+rect -338 -1862 -325 1862
+rect -279 -1862 -266 1862
+rect 266 1862 338 1906
+rect -338 -1906 -266 -1862
+rect 266 -1862 279 1862
+rect 325 -1862 338 1862
+rect 266 -1906 338 -1862
+rect -338 -1919 338 -1906
+rect -338 -1965 -222 -1919
+rect 222 -1965 338 -1919
+rect -338 -1978 338 -1965
+<< psubdiffcont >>
+rect -222 1919 222 1965
+rect -325 -1862 -279 1862
+rect 279 -1862 325 1862
+rect -222 -1965 222 -1919
+<< polysilicon >>
+rect -112 1871 112 1884
+rect -112 1825 -99 1871
+rect 99 1825 112 1871
+rect -112 1792 112 1825
+rect -112 -1825 112 -1792
+rect -112 -1871 -99 -1825
+rect 99 -1871 112 -1825
+rect -112 -1884 112 -1871
+<< polycontact >>
+rect -99 1825 99 1871
+rect -99 -1871 99 -1825
+<< metal1 >>
+rect -233 1919 -222 1965
+rect 222 1919 233 1965
+rect -325 1862 -279 1873
+rect -110 1825 -99 1871
+rect 99 1825 110 1871
+rect 279 1862 325 1873
+rect -187 1779 -141 1790
+rect -187 -1790 -141 -1779
+rect 141 1779 187 1790
+rect 141 -1790 187 -1779
+rect -325 -1873 -279 -1862
+rect -110 -1871 -99 -1825
+rect 99 -1871 110 -1825
+rect 279 -1873 325 -1862
+rect -233 -1965 -222 -1919
+rect 222 -1965 233 -1919
+<< properties >>
+string FIXED_BBOX -302 -1942 302 1942
+string gencell nfet_03v3
+string library gf180mcu
+string parameters w 17.92 l 1.12 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 class mosfet full_metal 0 compatible {nfet_03v3 nfet_05v0 nfet_06v0 nfet_06v0_nvt}
+<< end >>
