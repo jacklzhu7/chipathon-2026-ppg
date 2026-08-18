@@ -1,0 +1,75 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1786641790
+<< error_p >>
+rect -34 663 -23 709
+rect 23 663 34 674
+rect -80 -628 -57 -617
+rect 57 -628 80 -617
+rect -34 -709 -23 -663
+<< pwell >>
+rect -278 -840 278 840
+<< nmos >>
+rect -28 -630 28 630
+<< ndiff >>
+rect -116 617 -28 630
+rect -116 -617 -103 617
+rect -57 -617 -28 617
+rect -116 -630 -28 -617
+rect 28 617 116 630
+rect 28 -617 57 617
+rect 103 -617 116 617
+rect 28 -630 116 -617
+<< ndiffc >>
+rect -103 -617 -57 617
+rect 57 -617 103 617
+<< psubdiff >>
+rect -254 744 254 816
+rect -254 700 -182 744
+rect -254 -700 -241 700
+rect -195 -700 -182 700
+rect 182 700 254 744
+rect -254 -744 -182 -700
+rect 182 -700 195 700
+rect 241 -700 254 700
+rect 182 -744 254 -700
+rect -254 -816 254 -744
+<< psubdiffcont >>
+rect -241 -700 -195 700
+rect 195 -700 241 700
+<< polysilicon >>
+rect -36 709 36 722
+rect -36 663 -23 709
+rect 23 663 36 709
+rect -36 650 36 663
+rect -28 630 28 650
+rect -28 -650 28 -630
+rect -36 -663 36 -650
+rect -36 -709 -23 -663
+rect 23 -709 36 -663
+rect -36 -722 36 -709
+<< polycontact >>
+rect -23 663 23 709
+rect -23 -709 23 -663
+<< metal1 >>
+rect -241 757 241 803
+rect -241 700 -195 757
+rect -34 663 -23 709
+rect 23 663 34 709
+rect 195 700 241 757
+rect -103 617 -57 628
+rect -103 -628 -57 -617
+rect 57 617 103 628
+rect 57 -628 103 -617
+rect -241 -757 -195 -700
+rect -34 -709 -23 -663
+rect 23 -709 34 -663
+rect 195 -757 241 -700
+rect -241 -803 241 -757
+<< properties >>
+string FIXED_BBOX -218 -780 218 780
+string gencell nfet_03v3
+string library gf180mcu
+string parameters w 6.3 l 0.28 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 class mosfet full_metal 1 compatible {nfet_03v3 nfet_05v0 nfet_06v0 nfet_06v0_nvt} ad {int((nf+1)/2) * W/nf * 0.18u} as {int((nf+2)/2) * W/nf * 0.18u} pd {2*int((nf+1)/2) * (W/nf + 0.18u)} ps {2*int((nf+2)/2) * (W/nf + 0.18u)} nrd {0.18u / W} nrs {0.18u / W} sa 0 sb 0 sd 0
+<< end >>

@@ -1,0 +1,72 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell pfet_03v3_93LYUU in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
+Flattening unmatched subcell pfet_03v3_9X9WZQ in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
+Flattening unmatched subcell pfet_03v3_NPQ64B in circuit foldedcasc_cmfb_forlayout (1)(1 instance)
+Flattening unmatched subcell pfet_03v3_BGXDRV in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
+Flattening unmatched subcell pfet_03v3_K6VR6N in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
+Flattening unmatched subcell pfet_03v3_PH8H39 in circuit foldedcasc_cmfb_forlayout (1)(1 instance)
+Flattening unmatched subcell nfet_03v3_H55Z6X in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
+Flattening unmatched subcell nfet_03v3_Q9T6P6 in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
+
+Class foldedcasc_cmfb_forlayout (1):  Merged 27 parallel devices.
+Subcircuit summary:
+Circuit 1: foldedcasc_cmfb_forlayout       |Circuit 2: foldedcasc_cmfb_forlayout       
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (4)                              |nfet_03v3 (12->4)                          
+pfet_03v3 (10)                             |pfet_03v3 (29->10)                         
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 17                         |Number of nets: 17                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: foldedcasc_cmfb_forlayout       |Circuit 2: foldedcasc_cmfb_forlayout       
+-------------------------------------------|-------------------------------------------
+Vinp                                       |Vinp                                       
+Vinn                                       |Vinn                                       
+VDD                                        |VDD                                        
+GND                                        |GND                                        
+Vb4                                        |Vb4                                        
+Vb1                                        |Vb1                                        
+Vb3                                        |Vb3                                        
+Vb2                                        |Vb2                                        
+Voutp                                      |Voutp                                      
+Voutn                                      |Voutn                                      
+Ibias25u                                   |Ibias25u                                   
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes foldedcasc_cmfb_forlayout and foldedcasc_cmfb_forlayout are equivalent.
+
+Final result: Circuits match uniquely.
+.
