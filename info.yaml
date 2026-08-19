@@ -17,3 +17,45 @@ project:
   discord: ""                   # Optional: Discord username (for support / communication)
   description: "PDK test data"  # Short one-line description
   lvs_config: "./lvs_config.json"
+
+pins: 
+  - name: Ibias
+    io_type: power
+  - name: LED_K
+    io_type: analog
+  - name: VSET 
+    io_type: power
+  - name: Comparator_out
+    io_type: analog
+  - name: VDD
+    io_type: power
+  - name: GND
+    io_type: ground
+  - name: HPF_outp
+    io_type: analog
+    secondary_esd: true
+  - name: HPF_outp
+    io_type: analog
+  - name: HPF_outn
+    io_type: analog
+  - name: HPF_inp
+    io_type: analog
+  - name: HPF_inn
+    io_type: analog
+  - name: Vb1
+    io_type: power
+    - name: Vb2
+    io_type: power
+  - name: Vb3
+    io_type: power
+    - name: Vb4
+    io_type: power
+  - name: LPF_outp
+    io_type: analog
+  - name: LPF_outn
+    io_type: analog
+  - name: LPF_inp
+    io_type: analog
+  - name: LPF_inn
+    io_type: analog
+
