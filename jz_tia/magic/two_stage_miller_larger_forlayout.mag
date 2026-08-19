@@ -1,0 +1,50 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1787177608
+<< error_s >>
+rect 1542 7983 1553 8029
+rect 1542 5071 1553 5117
+rect 571 663 603 709
+rect 569 560 603 608
+rect 617 560 649 663
+rect 617 80 651 560
+rect 1716 437 1727 483
+rect 1773 437 1784 448
+rect 1670 212 1691 223
+rect 1809 212 1830 223
+rect 1716 131 1727 177
+rect 617 -23 649 80
+use nfet_03v3_RPCUCL  XM1
+timestamp 1787176451
+transform 1 0 290 0 1 350
+box -350 -410 350 410
+use nfet_03v3_RPCUCL  XM2
+timestamp 1787176451
+transform 1 0 930 0 1 290
+box -350 -410 350 410
+use pfet_03v3_Z6D5AH  XM3
+timestamp 1787176451
+transform 1 0 550 0 1 8120
+box -350 -3150 350 3150
+use pfet_03v3_Z7NY2M  XM4
+timestamp 1787176451
+transform 1 0 350 0 1 2750
+box -350 -1690 350 1690
+use pfet_03v3_Z7NY2M  XM5
+timestamp 1787176451
+transform 1 0 1210 0 1 2810
+box -350 -1690 350 1690
+use pfet_03v3_P4GJB7  XM6
+timestamp 1787176451
+transform 1 0 1590 0 1 6550
+box -300 -1610 300 1610
+use nfet_03v3_PK746H  XM7
+timestamp 1787176451
+transform 1 0 1750 0 1 307
+box -280 -307 280 307
+use pfet_03v3_Z6D5AH  XM8
+timestamp 1787176451
+transform 1 0 -470 0 1 8220
+box -350 -3150 350 3150
+<< end >>

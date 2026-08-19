@@ -42,7 +42,7 @@ C {gnd.sym} 10 -240 0 0 {name=l6 lab=0
 }
 C {capa.sym} 10 -270 0 0 {name=C3
 m=1
-value=11p
+value=17p
 footprint=1206
 device="ceramic capacitor"
 }
@@ -57,7 +57,7 @@ m=1
 }
 C {capa.sym} 230 -140 1 0 {name=C5
 m=1
-value=2p
+value=3p
 footprint=1206
 device="ceramic capacitor"
 }
@@ -99,4 +99,4 @@ device="ceramic capacitor"
 }
 C {gnd.sym} 500 -270 0 0 {name=l1 lab=0
 }
-C {chipathon-2026-ppg/jz_tia/two_stage_miller_larger_forsym.sym} 200 -330 0 0 {name=x1}
+C {two_stage_miller_larger_forsym.sym} 200 -330 0 0 {name=x1}

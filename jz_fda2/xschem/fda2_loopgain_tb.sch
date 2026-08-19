@@ -99,7 +99,6 @@ C {isource.sym} 490 -410 0 0 {name=I1 value=25u
 }
 C {gnd.sym} 370 -220 0 0 {name=l5 lab=0
 }
-C {chipathon-2026-ppg/jz_fda2/foldedcasc_cmfb_forsym.sym} 380 -90 0 0 {name=x1}
 C {lab_pin.sym} 340 -400 0 1 {name=p7 sig_type=std_logic lab=Vb4
 }
 C {lab_pin.sym} 320 -410 3 1 {name=p8 sig_type=std_logic lab=Vb3
@@ -219,3 +218,4 @@ m=1
 value=1G
 footprint=1206
 device="ceramic capacitor"}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 360 -290 0 0 {name=x1}

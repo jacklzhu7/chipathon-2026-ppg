@@ -32,9 +32,9 @@ N 180 -270 180 -130 {lab=#net1}
 N 320 -410 320 -380 {lab=Vb3}
 N 340 -400 340 -380 {lab=Vb4}
 N 870 -810 870 -790 {lab=Vinp
-spice_ignore=true}
+}
 N 950 -810 950 -790 {lab=Vinn
-spice_ignore=true}
+}
 N 830 -640 830 -610 {lab=Vb1
 }
 N 820 -640 830 -640 {lab=Vb1
@@ -100,9 +100,9 @@ N 1380 -800 1380 -780 {lab=Vinp3
 N 1460 -800 1460 -780 {lab=Vinn3
 }
 N 1370 -320 1370 -300 {lab=Vinp
-}
+spice_ignore=true}
 N 1450 -320 1450 -300 {lab=Vinn
-}
+spice_ignore=true}
 C {capa.sym} 640 -250 0 0 {name=C4
 m=1
 value=20p
@@ -139,7 +139,7 @@ plot db(cmrr)
 plot db (Voutp2-Voutn2)
 plot 180*cph(cmrr)/pi
 .endc"
-spice_ignore=true}
+}
 C {code.sym} 80 -870 0 0 {name=MODELS only_toplevel=true  
 format="tcleval( @value )" 
 value="
@@ -180,7 +180,6 @@ C {lab_pin.sym} 700 -300 0 1 {name=p3 sig_type=std_logic lab=Voutp
 }
 C {lab_pin.sym} 640 -280 0 1 {name=p6 sig_type=std_logic lab=Voutn
 }
-C {chipathon-2026-ppg/jz_fda2/foldedcasc_cmfb_forsym.sym} 380 -90 0 0 {name=x1}
 C {lab_pin.sym} 340 -400 0 1 {name=p7 sig_type=std_logic lab=Vb4
 }
 C {lab_pin.sym} 320 -410 3 1 {name=p8 sig_type=std_logic lab=Vb3
@@ -189,17 +188,17 @@ C {vsource.sym} 790 -760 0 0 {name=V2 value=3.3 savecurrent=false}
 C {vdd.sym} 790 -790 0 0 {name=l6 lab=VDD}
 C {gnd.sym} 790 -730 0 0 {name=l8 lab=0}
 C {lab_pin.sym} 870 -810 0 0 {name=p9 sig_type=std_logic lab=Vinp
-spice_ignore=true}
+}
 C {vsource.sym} 870 -760 0 0 {name=V7 value="1.7 AC 0.5" savecurrent=false
-spice_ignore=true}
+}
 C {gnd.sym} 870 -730 0 0 {name=l9 lab=0
-spice_ignore=true}
+}
 C {lab_pin.sym} 950 -810 0 0 {name=p10 sig_type=std_logic lab=Vinn
-spice_ignore=true}
+}
 C {vsource.sym} 950 -760 0 0 {name=V8 value="1.7 AC -0.5" savecurrent=false
-spice_ignore=true}
+}
 C {gnd.sym} 950 -730 0 0 {name=l10 lab=0
-spice_ignore=true}
+}
 C {vsource.sym} 830 -580 0 0 {name=V9 value=1.4 savecurrent=false
 }
 C {gnd.sym} 830 -550 0 0 {name=l12 lab=0
@@ -275,7 +274,6 @@ C {lab_pin.sym} 690 180 0 1 {name=p19 sig_type=std_logic lab=Voutp2
 }
 C {lab_pin.sym} 630 200 0 1 {name=p20 sig_type=std_logic lab=Voutn2
 }
-C {chipathon-2026-ppg/jz_fda2/foldedcasc_cmfb_forsym.sym} 370 390 0 0 {name=x2}
 C {lab_pin.sym} 330 80 0 1 {name=p21 sig_type=std_logic lab=Vb4
 }
 C {lab_pin.sym} 310 70 3 1 {name=p22 sig_type=std_logic lab=Vb3
@@ -315,7 +313,6 @@ C {lab_pin.sym} 670 460 0 1 {name=p27 sig_type=std_logic lab=Voutp3
 }
 C {lab_pin.sym} 610 480 0 1 {name=p28 sig_type=std_logic lab=Voutn3
 }
-C {chipathon-2026-ppg/jz_fda2/foldedcasc_cmfb_forsym.sym} 350 670 0 0 {name=x3}
 C {lab_pin.sym} 310 360 0 1 {name=p29 sig_type=std_logic lab=Vb4
 }
 C {lab_pin.sym} 290 350 3 1 {name=p30 sig_type=std_logic lab=Vb3
@@ -347,16 +344,17 @@ tran 10u 100u
 plot (Vinp+Vinn)/2
 plot (Voutp+Voutn)/2
 .endc"
-}
+spice_ignore=true}
 C {lab_pin.sym} 1370 -320 0 0 {name=p35 sig_type=std_logic lab=Vinp
-}
+spice_ignore=true}
 C {vsource.sym} 1370 -270 0 0 {name=V6 value="PWL(0 1.7 50u 1.7 50.002u 1.701)" savecurrent=false
-}
+spice_ignore=true}
 C {gnd.sym} 1370 -240 0 0 {name=l27 lab=0
-}
+spice_ignore=true}
 C {lab_pin.sym} 1450 -320 0 0 {name=p36 sig_type=std_logic lab=Vinn
-}
+spice_ignore=true}
 C {vsource.sym} 1450 -270 0 0 {name=V13 value="PWL(0 1.7 50u 1.7 50.002u 1.701)" savecurrent=false
-}
+spice_ignore=true}
 C {gnd.sym} 1450 -240 0 0 {name=l28 lab=0
-}
+spice_ignore=true}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 360 -290 0 0 {name=x4}
