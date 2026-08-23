@@ -69,10 +69,11 @@ N 720 -420 770 -420 {lab=VDD}
 N 770 -650 770 -580 {lab=VDD}
 N 700 -200 700 -140 {lab=GND}
 N 670 -400 670 -370 {lab=VDD}
+N 820 -400 820 -390 {lab=GND}
 C {symbols/nfet_03v3.sym} 590 -260 0 1 {name=M1
 L=1u
 W=2u
-nf=1
+nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -86,7 +87,7 @@ spiceprefix=X
 C {symbols/nfet_03v3.sym} 750 -260 0 0 {name=M2
 L=1u
 W=2u
-nf=1
+nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -100,7 +101,7 @@ spiceprefix=X
 C {symbols/pfet_03v3.sym} 650 -520 0 0 {name=M3
 L=1u
 W=29.4u
-nf=1
+nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -170,7 +171,7 @@ spiceprefix=X
 C {symbols/pfet_03v3.sym} 420 -520 0 0 {name=M8
 L=1u
 W=29.4u
-nf=1
+nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -193,12 +194,6 @@ descr="I="
 C {ngspice_get_value.sym} 590 -210 0 0 {name=r8 node=@m.xm1.m0[gds]
 descr="gds="
 }
-C {capa.sym} 820 -370 3 0 {name=C1
-m=1
-value=3p
-footprint=1206
-device="ceramic capacitor"
-}
 C {ipin.sym} 490 -420 0 0 {name=p4 lab=Vinn}
 C {ipin.sym} 850 -420 0 1 {name=p1 lab=Vinp}
 C {opin.sym} 1060 -430 0 0 {name=p2 lab=Vout}
@@ -206,9 +201,16 @@ C {ipin.sym} 440 -380 0 0 {name=p3 lab=Ibias25u}
 C {ipin.sym} 770 -650 0 0 {name=p5 lab=VDD}
 C {ipin.sym} 700 -140 0 0 {name=p6 lab=GND}
 C {lab_pin.sym} 670 -370 2 0 {name=p7 sig_type=std_logic lab=VDD}
-C {res.sym} 900 -370 3 0 {name=R1
-value=11k
-footprint=1206
-device=resistor
-m=1
-}
+C {symbols/ppolyf_u_1k.sym} 820 -370 1 0 {name=R2
+W=1e-6
+L=11e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2f0fF.sym} 900 -370 1 0 {name=C2
+W=12.63e-6
+L=12.63e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 820 -400 2 0 {name=p8 sig_type=std_logic lab=GND}

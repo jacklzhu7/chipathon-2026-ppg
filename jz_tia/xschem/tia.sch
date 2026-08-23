@@ -46,7 +46,9 @@ format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
-.lib $::180MCU_MODELS/smbb000149.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
 C {gnd.sym} 1040 -490 0 0 {name=l31 lab=0
 spice_ignore=true}
@@ -131,4 +133,4 @@ C {launcher.sym} 700 -690 0 0 {name=h1
 descr=Backannotate
 tclcommand="cd ~/.xschem/simulations/
 xschem annotate_op oppoints.raw"}
-C {two_stage_miller_larger_forsym.sym} 210 -220 0 0 {name=x1}
+C {/foss/designs/chipathon-2026-ppg/jz_tia/xschem/two_stage_miller_larger_forlayout.sym} 210 -210 0 0 {name=x1}

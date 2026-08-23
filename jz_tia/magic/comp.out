@@ -1,0 +1,120 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell cap_mim_2f0fF and Circuit 2 cell cap_mim_2f0_m4m5_noshield are black boxes.
+Warning: Equate pins:  cell cap_mim_2f0fF is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_mim_2f0fF                   |Circuit 2: cap_mim_2f0_m4m5_noshield       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_mim_2f0fF and cap_mim_2f0_m4m5_noshield are equivalent.
+
+Circuit 1 cell ppolyf_u_1k and Circuit 2 cell ppolyf_u_1k are black boxes.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u_1k                     |Circuit 2: ppolyf_u_1k                     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u_1k and ppolyf_u_1k are equivalent.
+Flattening unmatched subcell pfet_03v3_E22R92 in circuit two_stage_miller_larger_forlayout (1)(2 instances)
+Flattening unmatched subcell nfet_03v3_YZC56H in circuit two_stage_miller_larger_forlayout (1)(2 instances)
+Flattening unmatched subcell cap_mim_2p0fF_LH4DUQ in circuit two_stage_miller_larger_forlayout (1)(1 instance)
+Flattening unmatched subcell pfet_03v3_3RQSA8 in circuit two_stage_miller_larger_forlayout (1)(2 instances)
+Flattening unmatched subcell ppolyf_u_1k_4ZCDXZ in circuit two_stage_miller_larger_forlayout (1)(1 instance)
+Flattening unmatched subcell pfet_03v3_MLZXNU in circuit two_stage_miller_larger_forlayout (1)(1 instance)
+Flattening unmatched subcell nfet_03v3_FPEKWK in circuit two_stage_miller_larger_forlayout (1)(1 instance)
+
+Class two_stage_miller_larger_forlayout (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: two_stage_miller_larger_forlayo |Circuit 2: two_stage_miller_larger_forlayo 
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (3)                              |nfet_03v3 (5->3)                           
+pfet_03v3 (5)                              |pfet_03v3 (9->5)                           
+ppolyf_u_1k (1)                            |ppolyf_u_1k (1)                            
+cap_mim_2f0fF (1)                          |cap_mim_2f0_m4m5_noshield (1)              
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: two_stage_miller_larger_forlayo |Circuit 2: two_stage_miller_larger_forlayo 
+-------------------------------------------|-------------------------------------------
+Vinp                                       |Vinp                                       
+Vinn                                       |Vinn                                       
+VDD                                        |VDD                                        
+Vout                                       |Vout                                       
+GND                                        |GND                                        
+Ibias25u                                   |Ibias25u                                   
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes two_stage_miller_larger_forlayout and two_stage_miller_larger_forlayout are equivalent.
+Flattening unmatched subcell cap_mim_2p0fF_LNLEKV in circuit tia (1)(1 instance)
+Flattening unmatched subcell ppolyf_u_1k_STT4J9 in circuit tia (1)(1 instance)
+
+Class tia (1):  Merged 9 series devices.
+Subcircuit summary:
+Circuit 1: tia_forlayout                   |Circuit 2: tia                             
+-------------------------------------------|-------------------------------------------
+two_stage_miller_larger_forlayout (1)      |two_stage_miller_larger_forlayout (1)      
+cap_mim_2f0fF (1)                          |cap_mim_2f0_m4m5_noshield (1)              
+ppolyf_u_1k (1)                            |ppolyf_u_1k (10->1)                        
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: tia_forlayout                   |Circuit 2: tia                             
+-------------------------------------------|-------------------------------------------
+GND                                        |GND                                        
+Vout                                       |Vout                                       
+Iin                                        |Iin                                        
+Vcm                                        |Vcm                                        
+Ibias25u                                   |Ibias25u                                   
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tia_forlayout and tia are equivalent.
+
+Final result: Circuits match uniquely.
+.
