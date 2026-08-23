@@ -28,7 +28,21 @@ Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nfet_03v3 and nfet_03v3 are equivalent.
-Flattening unmatched subcell pfet_03v3_93LYUU in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
+
+Circuit 1 cell ppolyf_u_1k and Circuit 2 cell ppolyf_u_1k are black boxes.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u_1k                     |Circuit 2: ppolyf_u_1k                     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u_1k and ppolyf_u_1k are equivalent.
+Flattening unmatched subcell pfet_03v3_2JHB2G in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
 Flattening unmatched subcell pfet_03v3_9X9WZQ in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
 Flattening unmatched subcell pfet_03v3_NPQ64B in circuit foldedcasc_cmfb_forlayout (1)(1 instance)
 Flattening unmatched subcell pfet_03v3_BGXDRV in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
@@ -61,12 +75,43 @@ Vb4                                        |Vb4
 Vb1                                        |Vb1                                        
 Vb3                                        |Vb3                                        
 Vb2                                        |Vb2                                        
+Ibias25u                                   |Ibias25u                                   
 Voutp                                      |Voutp                                      
 Voutn                                      |Voutn                                      
-Ibias25u                                   |Ibias25u                                   
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes foldedcasc_cmfb_forlayout and foldedcasc_cmfb_forlayout are equivalent.
+Flattening unmatched subcell ppolyf_u_1k_SBHPZ7 in circuit fda2 (1)(2 instances)
+Flattening unmatched subcell ppolyf_u_1k_H7P4BW in circuit fda2 (1)(2 instances)
+
+Class fda2 (1):  Merged 38 series devices.
+Subcircuit summary:
+Circuit 1: fda2_forlayout                  |Circuit 2: fda2                            
+-------------------------------------------|-------------------------------------------
+foldedcasc_cmfb_forlayout (1)              |foldedcasc_cmfb_forlayout (1)              
+ppolyf_u_1k (4)                            |ppolyf_u_1k (42->4)                        
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: fda2_forlayout                  |Circuit 2: fda2                            
+-------------------------------------------|-------------------------------------------
+GND                                        |GND                                        
+Voutn                                      |Voutn                                      
+Voutp                                      |Voutp                                      
+Vinp                                       |Vinp                                       
+Vinn                                       |Vinn                                       
+VDD                                        |VDD                                        
+Vb4                                        |Vb4                                        
+Vb1                                        |Vb1                                        
+Vb3                                        |Vb3                                        
+Ibias25u                                   |Ibias25u                                   
+Vb2                                        |Vb2                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes fda2_forlayout and fda2 are equivalent.
 
 Final result: Circuits match uniquely.
 .
