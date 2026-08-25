@@ -22,7 +22,8 @@ pins:
   - name: GND
     io_type: ground
   - name: Ibias
-    io_type: power
+    io_type: analog
+    secondary_esd: true
   - name: LED_K
     io_type: analog
     secondary_esd: true
