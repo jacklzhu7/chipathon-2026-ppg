@@ -19,43 +19,57 @@ project:
   lvs_config: "./lvs_config.json"
 
 pins: 
+  - name: GND
+    io_type: ground
   - name: Ibias
     io_type: power
   - name: LED_K
     io_type: analog
+    secondary_esd: true
   - name: VSET 
     io_type: power
   - name: Comparator_out
     io_type: analog
+    secondary_esd: true
   - name: VDD
     io_type: power
-  - name: GND
-    io_type: ground
   - name: HPF_outp
     io_type: analog
     secondary_esd: true
   - name: HPF_outp
     io_type: analog
+    secondary_esd: true
   - name: HPF_outn
     io_type: analog
+    secondary_esd: true
   - name: HPF_inp
     io_type: analog
+    secondary_esd: true
   - name: HPF_inn
     io_type: analog
+    secondary_esd: true
   - name: Vb1
-    io_type: power
-    - name: Vb2
-    io_type: power
+    io_type: analog
+    secondary_esd: true
+  - name: Vb2
+    io_type: analog
+    secondary_esd: true
   - name: Vb3
-    io_type: power
-    - name: Vb4
-    io_type: power
+    io_type: analog
+    secondary_esd: true
+  - name: Vb4
+    io_type: analog
+    secondary_esd: true
   - name: LPF_outp
     io_type: analog
+    secondary_esd: true
   - name: LPF_outn
     io_type: analog
+    secondary_esd: true
   - name: LPF_inp
     io_type: analog
+    secondary_esd: true
   - name: LPF_inn
     io_type: analog
+    secondary_esd: true
 
