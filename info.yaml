@@ -37,9 +37,6 @@ pins:
   - name: HPF_outp
     io_type: analog
     secondary_esd: true
-  - name: HPF_outp
-    io_type: analog
-    secondary_esd: true
   - name: HPF_outn
     io_type: analog
     secondary_esd: true
