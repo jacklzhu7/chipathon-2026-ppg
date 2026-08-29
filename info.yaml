@@ -23,51 +23,52 @@ pins:
     io_type: ground
   - name: Ibias
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: LED_K
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: VSET 
-    io_type: power
+    io_type: analog
+    secondary_esd: false
   - name: Comparator_out
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: VDD
     io_type: power
   - name: HPF_outp
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: HPF_outn
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: HPF_inp
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: HPF_inn
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: Vb1
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: Vb2
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: Vb3
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: Vb4
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: LPF_outp
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: LPF_outn
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: LPF_inp
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
   - name: LPF_inn
     io_type: analog
-    secondary_esd: true
+    secondary_esd: false
 
