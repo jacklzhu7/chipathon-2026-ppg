@@ -1,0 +1,32 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+spectre_format="@name ( @pinlist ) @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 -60 -50 -60 -30 {}
+L 4 -90 -60 -90 -40 {}
+L 4 -150 -20 -130 -20 {}
+L 4 40 0 60 0 {}
+L 4 -150 20 -130 20 {}
+L 4 -60 30 -60 50 {}
+B 5 -62.5 -52.5 -57.5 -47.5 {name=VDD dir=in}
+B 5 -92.5 -62.5 -87.5 -57.5 {name=Ibias25u dir=in}
+B 5 -152.5 -22.5 -147.5 -17.5 {name=Vcm dir=in}
+B 5 57.5 -2.5 62.5 2.5 {name=Vout dir=out}
+B 5 -152.5 17.5 -147.5 22.5 {name=Iin dir=in}
+B 5 -62.5 47.5 -57.5 52.5 {name=GND dir=in}
+P 4 5 40 0 -130 -50 -130 50 40 0 40 0 {}
+T {TIA} -66.5 -6 0 0 0.3 0.3 {}
+T {@name} 15 -42 0 0 0.2 0.2 {}
+T {VDD} -56 -25 1 0 0.2 0.2 {}
+T {Ibias25u} -86 -35 1 0 0.2 0.2 {}
+T {Vcm} -125 -24 0 0 0.2 0.2 {}
+T {Vout} 55 -14 0 1 0.2 0.2 {}
+T {Iin} -125 16 0 0 0.2 0.2 {}
+T {GND} -56 55 1 0 0.2 0.2 {}

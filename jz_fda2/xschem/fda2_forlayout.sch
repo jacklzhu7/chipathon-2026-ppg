@@ -39,7 +39,6 @@ N 110 -250 110 -190 {lab=GND}
 N 110 -380 110 -320 {lab=GND}
 N 370 -180 370 -150 {lab=GND}
 N 370 -530 370 -490 {lab=GND}
-C {xschem/foldedcasc_cmfb_forlayout.sym} 360 -290 0 0 {name=x1}
 C {ipin.sym} -20 -300 0 0 {name=p9 lab=Vinn}
 C {opin.sym} 700 -300 0 0 {name=p10 lab=Voutp}
 C {opin.sym} 640 -280 0 0 {name=p3 lab=Voutn}
@@ -78,3 +77,4 @@ model=ppolyf_u_1k
 spiceprefix=X
 m=1}
 C {lab_pin.sym} 370 -530 0 0 {name=p14 sig_type=std_logic lab=GND}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 360 -290 0 0 {name=x1}

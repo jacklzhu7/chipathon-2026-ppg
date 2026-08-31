@@ -23,7 +23,7 @@ N 300 -660 300 -550 {lab=VDD}
 N 300 -410 300 -380 {lab=GND}
 N 330 -390 330 -370 {lab=GND}
 N 300 -390 330 -390 {lab=GND}
-C {/foss/designs/chipathon-2026-ppg/jz_tia/xschem/two_stage_miller_larger_forlayout.sym} 300 -470 0 0 {name=x1}
+C {chipathon-2026-ppg/jz_tia/xschem/two_stage_miller_larger_forlayout.sym} 300 -470 0 0 {name=x1}
 C {ipin.sym} 130 -450 0 0 {name=p2 lab=Iin}
 C {ipin.sym} 190 -500 0 0 {name=p1 lab=Vcm}
 C {ipin.sym} 270 -630 0 0 {name=p4 lab=Ibias25u}
