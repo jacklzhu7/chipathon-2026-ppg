@@ -8,46 +8,46 @@ E {}
 T {Active LPF 2nd-order MFB, fc=10Hz Butterworth, differential FDA} 580 -880 0 0 0.4 0.4 {}
 T {POSITIVE HALF} 600 -410 0 0 0.3 0.3 {}
 T {NEGATIVE HALF} 590 -700 0 0 0.3 0.3 {}
-N 600 -350 640 -350 {}
-N 700 -350 740 -350 {}
-N 600 -310 640 -310 {}
-N 700 -310 740 -310 {}
-N 600 -270 640 -270 {}
-N 700 -270 740 -270 {}
-N 600 -230 640 -230 {}
-N 700 -230 740 -230 {}
-N 600 -190 640 -190 {}
-N 700 -190 740 -190 {}
-N 590 -640 630 -640 {}
-N 690 -640 730 -640 {}
-N 590 -600 630 -600 {}
-N 690 -600 730 -600 {}
-N 590 -560 630 -560 {}
-N 690 -560 730 -560 {}
-N 590 -520 630 -520 {}
-N 690 -520 730 -520 {}
-N 590 -480 630 -480 {}
-N 690 -480 730 -480 {}
-N 830 -580 870 -580 {}
-N 830 -610 870 -610 {}
-N 1110 -610 1150 -610 {}
-N 1110 -590 1150 -590 {}
-N 990 -710 990 -670 {}
-N 990 -530 990 -490 {}
-N 900 -730 900 -690 {}
-N 920 -760 920 -690 {}
-N 940 -790 940 -690 {}
-N 960 -820 960 -690 {}
-N 1050 -690 1050 -650 {}
-N 1100 -520 1140 -520 {}
-N 1100 -480 1140 -480 {}
-N 1100 -440 1140 -440 {}
-N 1100 -400 1140 -400 {}
-N 1100 -360 1140 -360 {}
-N 1100 -320 1140 -320 {}
-N 1100 -280 1140 -280 {}
-N 1100 -240 1140 -240 {}
-N 1100 -200 1140 -200 {}
+N 600 -350 640 -350 {lab=in_p}
+N 700 -350 740 -350 {lab=ap}
+N 600 -310 640 -310 {lab=ap}
+N 700 -310 740 -310 {lab=sp}
+N 600 -270 640 -270 {lab=ap}
+N 700 -270 740 -270 {lab=out_n}
+N 600 -230 640 -230 {lab=ap}
+N 700 -230 740 -230 {lab=GND}
+N 600 -190 640 -190 {lab=sp}
+N 700 -190 740 -190 {lab=out_n}
+N 590 -640 630 -640 {lab=in_n}
+N 690 -640 730 -640 {lab=an}
+N 590 -600 630 -600 {lab=an}
+N 690 -600 730 -600 {lab=sn}
+N 590 -560 630 -560 {lab=an}
+N 690 -560 730 -560 {lab=out_p}
+N 590 -520 630 -520 {lab=an}
+N 690 -520 730 -520 {lab=GND}
+N 590 -480 630 -480 {lab=sn}
+N 690 -480 730 -480 {lab=out_p}
+N 830 -580 870 -580 {lab=sp}
+N 830 -610 870 -610 {lab=sn}
+N 1110 -610 1150 -610 {lab=out_p}
+N 1110 -590 1150 -590 {lab=out_n}
+N 990 -710 990 -670 {lab=VDD}
+N 990 -530 990 -490 {lab=GND}
+N 900 -730 900 -690 {lab=Vb1}
+N 920 -760 920 -690 {lab=Vb2}
+N 940 -790 940 -690 {lab=Vb3}
+N 960 -820 960 -690 {lab=Vb4}
+N 1050 -690 1050 -650 {lab=Ibias25u}
+N 1100 -520 1140 -520 {lab=out_p}
+N 1100 -480 1140 -480 {lab=out_n}
+N 1100 -440 1140 -440 {lab=VDD}
+N 1100 -400 1140 -400 {lab=GND}
+N 1100 -360 1140 -360 {lab=Vb1}
+N 1100 -320 1140 -320 {lab=Vb2}
+N 1100 -280 1140 -280 {lab=Vb3}
+N 1100 -240 1140 -240 {lab=Vb4}
+N 1100 -200 1140 -200 {lab=Ibias25u}
 C {res.sym} 670 -350 1 0 {name=R1p value=97.9k footprint=none device=resistor}
 C {res.sym} 670 -310 1 0 {name=R3p value=48.9k footprint=none device=resistor}
 C {res.sym} 670 -270 1 0 {name=R2p value=97.9k footprint=none device=resistor}
@@ -58,7 +58,6 @@ C {res.sym} 660 -600 1 0 {name=R3n value=48.9k footprint=none device=resistor}
 C {res.sym} 660 -560 1 0 {name=R2n value=97.9k footprint=none device=resistor}
 C {capa.sym} 660 -520 1 0 {name=C1n value=400n footprint=none device=capacitor}
 C {capa.sym} 660 -480 1 0 {name=C2n value=100n footprint=none device=capacitor}
-C {foldedcasc_cmfb_forsym.sym} 1000 -400 0 0 {name=XFDA1}
 C {ipin.sym} 600 -350 0 0 {name=p1 lab=in_p}
 C {ipin.sym} 590 -640 0 0 {name=p2 lab=in_n}
 C {lab_pin.sym} 740 -350 0 0 {name=la1 lab=ap}
@@ -108,3 +107,4 @@ C {iopin.sym} 1140 -320 0 0 {name=p8 lab=Vb2}
 C {iopin.sym} 1140 -280 0 0 {name=p9 lab=Vb3}
 C {iopin.sym} 1140 -240 0 0 {name=p10 lab=Vb4}
 C {iopin.sym} 1140 -200 0 0 {name=p11 lab=Ibias25u}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 980 -600 0 0 {name=x1}
