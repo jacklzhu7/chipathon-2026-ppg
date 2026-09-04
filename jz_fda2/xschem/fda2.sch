@@ -199,13 +199,13 @@ C {vsource.sym} 950 -760 0 0 {name=V8 value="1.7 AC -0.5" savecurrent=false
 }
 C {gnd.sym} 950 -730 0 0 {name=l10 lab=0
 }
-C {vsource.sym} 830 -580 0 0 {name=V9 value=1.4 savecurrent=false
+C {vsource.sym} 830 -580 0 0 {name=V9 value=1.7 savecurrent=false
 }
 C {gnd.sym} 830 -550 0 0 {name=l12 lab=0
 }
 C {lab_pin.sym} 820 -640 0 0 {name=p11 sig_type=std_logic lab=Vb1
 }
-C {vsource.sym} 910 -580 0 0 {name=V10 value=1.6 savecurrent=false
+C {vsource.sym} 910 -580 0 0 {name=V10 value=1.5 savecurrent=false
 }
 C {gnd.sym} 910 -550 0 0 {name=l13 lab=0
 }

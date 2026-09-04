@@ -5,6 +5,8 @@ V {}
 S {}
 F {}
 E {}
+T {_forsym uses Vb2 = 1.6V, Vb1 = 1.4V
+_forlayout uses Vb1 = 1.7V, Vb2 = 1.5V} 1070 -610 0 0 0.4 0.4 {}
 N 490 -280 560 -280 {lab=Voutn}
 N 180 -270 250 -270 {lab=#net1}
 N 180 -300 250 -300 {lab=#net2}
@@ -106,13 +108,13 @@ C {lab_pin.sym} 320 -410 3 1 {name=p8 sig_type=std_logic lab=Vb3
 C {vsource.sym} 790 -760 0 0 {name=V2 value=3.3 savecurrent=false}
 C {vdd.sym} 790 -790 0 0 {name=l6 lab=VDD}
 C {gnd.sym} 790 -730 0 0 {name=l8 lab=0}
-C {vsource.sym} 830 -580 0 0 {name=V9 value=1.4 savecurrent=false
+C {vsource.sym} 830 -580 0 0 {name=V9 value=1.7 savecurrent=false
 }
 C {gnd.sym} 830 -550 0 0 {name=l12 lab=0
 }
 C {lab_pin.sym} 820 -640 0 0 {name=p11 sig_type=std_logic lab=Vb1
 }
-C {vsource.sym} 910 -580 0 0 {name=V10 value=1.6 savecurrent=false
+C {vsource.sym} 910 -580 0 0 {name=V10 value=1.5 savecurrent=false
 }
 C {gnd.sym} 910 -550 0 0 {name=l13 lab=0
 }

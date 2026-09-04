@@ -151,4 +151,4 @@ C {launcher.sym} 120 -610 0 0 {name=h1
 descr=Backannotate
 tclcommand="cd ~/.xschem/simulations/
 xschem annotate_op oppoints.raw"}
-C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 360 -290 0 0 {name=x1}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forsym.sym} 380 -90 0 0 {name=x1}

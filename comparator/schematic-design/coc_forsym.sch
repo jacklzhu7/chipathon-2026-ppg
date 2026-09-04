@@ -12,7 +12,6 @@ N -180 320 370 320 {lab=GND}
 N 370 320 910 320 {lab=GND}
 N -240 250 330 250 {lab=Ibias5u}
 N -180 170 -180 320 {lab=GND}
-N -100 140 880 140 {lab=#net1}
 N -180 90 -180 110 {lab=#net1}
 N -180 90 -100 90 {lab=#net1}
 N -100 90 -100 140 {lab=#net1}
@@ -92,6 +91,7 @@ N -200 10 -180 10 {lab=VDD}
 N -200 -170 -200 10 {lab=VDD}
 N -0 70 60 70 {lab=VDD}
 N 60 -170 60 70 {lab=VDD}
+N -100 140 870 140 {lab=#net1}
 C {title.sym} -190 375 0 0 {name=comparator_design author="Zoe Zhao"}
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 20 -140 0 1 {name=M1
 L=1.12u
