@@ -422,7 +422,7 @@ C {lab_pin.sym} 1750 -570 1 0 {name=p30 sig_type=std_logic lab=Voutp1
 }
 C {lab_pin.sym} 1750 -550 3 0 {name=p31 sig_type=std_logic lab=Voutn1
 }
-C {chipathon-2026-ppg/ps-filters/hpf.sym} 770 -550 0 0 {name=X8}
+C {ps-filters/hpf.sym} 770 -550 0 0 {name=X8}
 C {gnd.sym} 810 -390 0 0 {name=l35 lab=0
 }
 C {vsource.sym} 810 -420 0 0 {name=V8 value=1.7 savecurrent=false
@@ -452,7 +452,7 @@ C {lab_pin.sym} 790 -680 3 1 {name=p37 sig_type=std_logic lab=Vb3
 }
 C {lab_pin.sym} 830 -670 0 1 {name=p38 sig_type=std_logic lab=Vb4
 }
-C {chipathon-2026-ppg/ps-filters/lpf.sym} 2770 -560 0 0 {name=X10}
+C {ps-filters/lpf.sym} 2770 -560 0 0 {name=X10}
 C {vdd.sym} 2670 -640 0 0 {name=l41 lab=VDD
 }
 C {lab_pin.sym} 2710 -700 0 0 {name=p39 sig_type=std_logic lab=Vb1
@@ -479,9 +479,9 @@ C {lab_pin.sym} 1940 -580 1 0 {name=p47 sig_type=std_logic lab=Voutp1
 }
 C {lab_pin.sym} 1940 -550 3 0 {name=p52 sig_type=std_logic lab=Voutn1
 }
-C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 1490 -560 0 0 {name=x1}
-C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 2320 -570 0 0 {name=x2}
-C {chipathon-2026-ppg/comparator/schematic-design/coc_forsym.sym} 3280 -550 0 0 {name=x4}
+C {jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 1490 -560 0 0 {name=x1}
+C {jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 2320 -570 0 0 {name=x2}
+C {comparator/schematic-design/coc_forsym.sym} 3280 -550 0 0 {name=x4}
 C {code.sym} 890 -1140 0 0 {name=MODELS only_toplevel=true  
 format="tcleval( @value )" 
 value="
@@ -491,8 +491,8 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
-C {chipathon-2026-ppg/jz_tia/xschem/tia_forlayout.sym} 270 -590 0 0 {name=x3}
-C {chipathon-2026-ppg/ps-bias/jz_bias.sym} 2000 -1120 0 0 {name=x5}
+C {jz_tia/xschem/tia_forlayout.sym} 270 -590 0 0 {name=x3}
+C {ps-bias/jz_bias.sym} 2000 -1120 0 0 {name=x5}
 C {vsource.sym} 1770 -1160 0 0 {name=V3 value=1.8 savecurrent=false
 }
 C {gnd.sym} 1770 -1130 0 0 {name=l1 lab=0

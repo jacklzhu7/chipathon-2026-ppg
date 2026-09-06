@@ -174,8 +174,8 @@ C {lab_pin.sym} -570 -100 1 0 {name=p30 sig_type=std_logic lab=Voutp1
 }
 C {lab_pin.sym} -580 -70 3 0 {name=p31 sig_type=std_logic lab=Voutn1
 }
-C {chipathon-2026-ppg/ps-filters/hpf.sym} -1520 -70 0 0 {name=X8}
-C {chipathon-2026-ppg/comparator/schematic-design/comp_forsym.sym} 1010 -80 0 0 {name=x9}
+C {ps-filters/hpf.sym} -1520 -70 0 0 {name=X8}
+C {comparator/schematic-design/coc_forsym.sym} 1010 -80 0 0 {name=x9}
 C {gnd.sym} 1000 0 0 0 {name=l36 lab=0
 }
 C {lab_pin.sym} 1210 -80 0 1 {name=p32 sig_type=std_logic lab=Vout
@@ -199,7 +199,7 @@ C {lab_pin.sym} -1500 -200 3 1 {name=p37 sig_type=std_logic lab=Vb3
 }
 C {lab_pin.sym} -1460 -190 0 1 {name=p38 sig_type=std_logic lab=Vb4
 }
-C {chipathon-2026-ppg/ps-filters/lpf.sym} 480 -80 0 0 {name=X10}
+C {ps-filters/lpf.sym} 480 -80 0 0 {name=X10}
 C {vdd.sym} 380 -160 0 0 {name=l41 lab=VDD
 }
 C {isource.sym} 620 -170 0 0 {name=I9 value=25u
@@ -228,9 +228,9 @@ C {lab_pin.sym} -270 -60 3 0 {name=p47 sig_type=std_logic lab=Voutp2
 }
 C {lab_pin.sym} -270 -120 1 0 {name=p52 sig_type=std_logic lab=Voutn2
 }
-C {chipathon-2026-ppg/jz_fda2/xschem/fda2_forlayout.sym} -860 -80 0 0 {name=x4}
+C {jz_fda2/xschem/fda2_forlayout.sym} -860 -80 0 0 {name=x4}
 C {gnd.sym} -860 0 0 0 {name=l16 lab=0
 }
-C {chipathon-2026-ppg/jz_tia/xschem/tia_forlayout.sym} -2010 -90 0 0 {name=x3}
-C {chipathon-2026-ppg/jz_fda2/xschem/fda2_forlayout.sym} -30 -90 0 0 {name=x1}
-C {chipathon-2026-ppg/ps-bias/bias.sym} -1930 -500 0 0 {name=X2}
+C {jz_tia/xschem/tia_forlayout.sym} -2010 -90 0 0 {name=x3}
+C {jz_fda2/xschem/fda2_forlayout.sym} -30 -90 0 0 {name=x1}
+C {ps-bias/bias.sym} -1930 -500 0 0 {name=X2}

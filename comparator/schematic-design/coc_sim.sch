@@ -85,7 +85,7 @@ spiceprefix=X
 }
 C {symbols/pfet3_03v3.sym} 240 -140 0 0 {name=M2
 L=1.12u
-W=17.92u
+W=4.8u
 body=VDD
 nf=1
 m=1
@@ -100,7 +100,7 @@ spiceprefix=X
 }
 C {symbols/pfet3_03v3.sym} 560 -140 0 1 {name=M3
 L=1.12u
-W=17.92u
+W=4.8u
 body=VDD
 nf=1
 m=1

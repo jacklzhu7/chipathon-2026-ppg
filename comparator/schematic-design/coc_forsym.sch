@@ -93,7 +93,7 @@ N -0 70 60 70 {lab=VDD}
 N 60 -170 60 70 {lab=VDD}
 N -100 140 870 140 {lab=#net1}
 C {title.sym} -190 375 0 0 {name=comparator_design author="Zoe Zhao"}
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 20 -140 0 1 {name=M1
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 20 -140 0 1 {name=M1
 L=1.12u
 W=4.48u
 body=VDD
@@ -108,7 +108,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 240 -140 0 0 {name=M2
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 240 -140 0 0 {name=M2
 L=1.12u
 W=17.92u
 body=VDD
@@ -123,7 +123,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 560 -140 0 1 {name=M3
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 560 -140 0 1 {name=M3
 L=1.12u
 W=17.92u
 body=VDD
@@ -138,7 +138,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 720 -140 0 0 {name=M4
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 720 -140 0 0 {name=M4
 L=1.12u
 W=4.48u
 body=VDD
@@ -153,7 +153,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 890 -50 0 0 {name=M5
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 890 -50 0 0 {name=M5
 L=1.12u
 W=4.48u
 body=VDD
@@ -168,7 +168,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} -160 10 0 1 {name=M6
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} -160 10 0 1 {name=M6
 L=1.12u
 W=4.48u
 body=VDD
@@ -183,7 +183,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} -160 140 0 1 {name=M7
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} -160 140 0 1 {name=M7
 L=1.12u
 W=2.24u
 body=GND
@@ -198,7 +198,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} -290 250 0 1 {name=M8
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} -290 250 0 1 {name=M8
 L=1.12u
 W=4.48u
 body=GND
@@ -213,7 +213,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 890 140 0 0 {name=M9
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 890 140 0 0 {name=M9
 L=1.12u
 W=2.24u
 body=GND
@@ -228,7 +228,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 350 250 0 0 {name=M10
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 350 250 0 0 {name=M10
 L=1.12u
 W=4.48u
 body=GND
@@ -243,7 +243,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} -20 70 0 0 {name=M11
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} -20 70 0 0 {name=M11
 L=1.12u
 W=17.92u
 body=GND
@@ -258,7 +258,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 760 60 0 1 {name=M12
+C {/foss/pdks/ciel/gf180mcu/versions/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 760 60 0 1 {name=M12
 L=1.12u
 W=17.92u
 body=GND
