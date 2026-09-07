@@ -157,12 +157,12 @@ C {isource.sym} 490 -410 0 0 {name=I1 value=25u
 C {gnd.sym} 370 -220 0 0 {name=l5 lab=0
 }
 C {res.sym} 370 -470 1 0 {name=R1
-value=185k
+value=500k
 footprint=1206
 device=resistor
 m=1}
 C {res.sym} 370 -130 1 0 {name=R2
-value=185k
+value=500k
 footprint=1206
 device=resistor
 m=1}

@@ -407,8 +407,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 560 -420 0 1 {name=M10
-L=0.28u
-W=16.2u
+L=0.56u
+W=23u
 nf=4
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -421,8 +421,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 700 -420 0 0 {name=M11
-L=0.28u
-W=16.2u
+L=0.56u
+W=23u
 nf=4
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -435,8 +435,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 560 -310 0 1 {name=M8
-L=0.28u
-W=19u
+L=0.56u
+W=24u
 nf=5
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -449,8 +449,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 700 -310 0 0 {name=M9
-L=0.28u
-W=19u
+L=0.56u
+W=24u
 nf=5
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -463,8 +463,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 560 -190 0 1 {name=M7
-L=0.28u
-W=6.6u
+L=0.56u
+W=35u
 nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -477,8 +477,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 700 -190 0 0 {name=M13
-L=0.28u
-W=6.6u
+L=0.56u
+W=35u
 nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -491,8 +491,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 560 -90 0 1 {name=M14
-L=0.28u
-W=13u
+L=0.56u
+W=26u
 nf=4
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -505,8 +505,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 700 -90 0 0 {name=M5
-L=0.28u
-W=13u
+L=0.56u
+W=26u
 nf=4
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
