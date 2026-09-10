@@ -1,0 +1,4 @@
+.subckt pmirror VDD Ibias5u Ibias5u_p
+M1 Ibias5u Ibias5u VDD VDD pfet_03v3 L=1u W=2u
+M2 Ibias5u_p Ibias5u VDD VDD pfet_03v3 L=1u W=2u
+.ends

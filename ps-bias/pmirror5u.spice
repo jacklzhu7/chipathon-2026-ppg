@@ -1,0 +1,7 @@
+* PMOS 5uA current mirror (GF180MCU 3.3V)
+* Ibias5u   = input: NMOS bias output sinks 5uA, sets gate voltage
+* Ibias5u_p = output: sources ~5uA to comparator PMOS tail
+.subckt pmirror5u VDD Ibias5u Ibias5u_p
+XXMP_ref Ibias5u   Ibias5u VDD VDD pfet_03v3 L=1u W=2u nf=1 ad=0.18p as=0.18p pd=2.36u ps=2.36u nrd=0 nrs=0.09 sa=0 sb=0 sd=0
+XXMP_out Ibias5u_p Ibias5u VDD VDD pfet_03v3 L=1u W=2u nf=1 ad=0.18p as=0.18p pd=2.36u ps=2.36u nrd=0 nrs=0.09 sa=0 sb=0 sd=0
+.ends
