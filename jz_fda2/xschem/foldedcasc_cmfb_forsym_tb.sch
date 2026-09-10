@@ -6,27 +6,17 @@ S {}
 F {}
 E {}
 N 490 -280 560 -280 {lab=Voutn}
-N 560 -280 560 -130 {lab=Voutn}
 N 180 -270 250 -270 {lab=#net1}
 N 180 -300 250 -300 {lab=#net2}
-N 180 -470 180 -320 {lab=#net2}
 N 490 -300 560 -300 {lab=Voutp}
-N 560 -470 560 -300 {lab=Voutp}
 N 560 -300 670 -300 {lab=Voutp}
 N 560 -280 640 -280 {lab=Voutn}
 N 670 -300 700 -300 {lab=Voutp}
 N 280 -440 280 -380 {lab=Vb1}
 N 300 -420 300 -380 {lab=Vb2}
-N 400 -470 560 -470 {lab=Voutp}
-N 180 -470 340 -470 {lab=#net2}
-N 400 -130 560 -130 {lab=Voutn}
-N 180 -130 340 -130 {lab=#net1}
 N 140 -300 180 -300 {lab=#net2}
 N 140 -270 180 -270 {lab=#net1}
-N 40 -270 80 -270 {lab=Vinp}
-N -20 -300 80 -300 {lab=Vinn}
-N 180 -320 180 -300 {lab=#net2}
-N 180 -270 180 -130 {lab=#net1}
+N 100 -270 140 -270 {lab=#net1}
 N 320 -410 320 -380 {lab=Vb3}
 N 340 -400 340 -380 {lab=Vb4}
 N 870 -810 870 -790 {lab=Vinp
@@ -51,6 +41,7 @@ N 880 -450 890 -450 {lab=Vb4
 }
 N 430 -440 430 -340 {lab=#net3}
 N 430 -440 490 -440 {lab=#net3}
+N 50 -300 140 -300 {lab=#net2}
 C {capa.sym} 640 -250 0 0 {name=C4
 m=1
 value=20p
@@ -74,7 +65,7 @@ op
 write oppoints.raw
 ac dec 20 1 1e9
 write ac.raw
-let gain=db( (Voutp-Voutn)/(Vinp-Vinn) )
+let gain=db(Voutp-Voutn)
 plot gain
 meas ac dc_gain find gain at=1
 let phase = 180*cph(Voutp-Voutn)/pi
@@ -99,31 +90,18 @@ C {isource.sym} 490 -410 0 0 {name=I1 value=25u
 }
 C {gnd.sym} 370 -220 0 0 {name=l5 lab=0
 }
-C {res.sym} 370 -470 1 0 {name=R1
-value=5k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 370 -130 1 0 {name=R2
-value=5k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 110 -270 1 0 {name=R3
-value=5k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 110 -300 1 0 {name=R4
-value=5k
-footprint=1206
-device=resistor
-m=1}
+C {vsource.sym} 100 -240 0 0 {name=V5 value="1.2 AC 0.5" savecurrent=false
+}
+C {gnd.sym} 100 -210 0 0 {name=l31 lab=0
+}
+C {vsource.sym} 50 -270 0 0 {name=V6 value="1.2 AC -0.5" savecurrent=false
+}
+C {gnd.sym} 50 -240 0 0 {name=l7 lab=0
+}
 C {lab_pin.sym} 700 -300 0 1 {name=p3 sig_type=std_logic lab=Voutp
 }
 C {lab_pin.sym} 640 -280 0 1 {name=p6 sig_type=std_logic lab=Voutn
 }
-C {chipathon-2026-ppg/jz_fda2/foldedcasc_cmfb_forsym.sym} 380 -90 0 0 {name=x1}
 C {lab_pin.sym} 340 -400 0 1 {name=p7 sig_type=std_logic lab=Vb4
 }
 C {lab_pin.sym} 320 -410 3 1 {name=p8 sig_type=std_logic lab=Vb3
@@ -143,13 +121,13 @@ C {vsource.sym} 950 -760 0 0 {name=V8 value="1.7 AC -0.5" savecurrent=false
 }
 C {gnd.sym} 950 -730 0 0 {name=l10 lab=0
 }
-C {vsource.sym} 830 -580 0 0 {name=V9 value=1.4 savecurrent=false
+C {vsource.sym} 830 -580 0 0 {name=V9 value=1.5 savecurrent=false
 }
 C {gnd.sym} 830 -550 0 0 {name=l12 lab=0
 }
 C {lab_pin.sym} 820 -640 0 0 {name=p11 sig_type=std_logic lab=Vb1
 }
-C {vsource.sym} 910 -580 0 0 {name=V10 value=1.6 savecurrent=false
+C {vsource.sym} 910 -580 0 0 {name=V10 value=1.7 savecurrent=false
 }
 C {gnd.sym} 910 -550 0 0 {name=l13 lab=0
 }
@@ -173,7 +151,4 @@ C {launcher.sym} 120 -610 0 0 {name=h1
 descr=Backannotate
 tclcommand="cd ~/.xschem/simulations/
 xschem annotate_op oppoints.raw"}
-C {lab_pin.sym} 40 -270 0 0 {name=p4 sig_type=std_logic lab=Vinp
-}
-C {lab_pin.sym} -20 -300 0 0 {name=p5 sig_type=std_logic lab=Vinn
-}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 360 -290 0 0 {name=x1}

@@ -59,7 +59,6 @@ C {res.sym} 650 -730 1 0 {name=R1n value=750k footprint=none device=resistor}
 C {capa.sym} 650 -690 1 0 {name=C2n value=1u footprint=none device=capacitor}
 C {capa.sym} 650 -650 1 0 {name=C3n value=1u footprint=none device=capacitor}
 C {res.sym} 650 -610 1 0 {name=R2n value=3.38Meg footprint=none device=resistor}
-C {foldedcasc_cmfb_forsym.sym} 1000 -400 0 0 {name=XFDA1}
 C {ipin.sym} 580 -450 0 0 {name=p1 lab=in_p}
 C {ipin.sym} 580 -770 0 0 {name=p2 lab=in_n}
 C {lab_pin.sym} 720 -450 0 0 {name=la1 lab=ap}
@@ -111,3 +110,4 @@ C {iopin.sym} 1280 -520 0 0 {name=p9 lab=Vb2}
 C {iopin.sym} 1280 -480 0 0 {name=p10 lab=Vb3}
 C {iopin.sym} 1280 -440 0 0 {name=p11 lab=Vb4}
 C {iopin.sym} 1280 -400 0 0 {name=p12 lab=Ibias25u}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 980 -600 0 0 {name=x1}

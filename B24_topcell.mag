@@ -1,0 +1,29 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1787865526
+use coc  coc_0 comparator/lo
+timestamp 1786704347
+transform 1 0 -2120 0 1 13670
+box 500 -1645 7155 1800
+use fda2  fda2_0 jz_fda2/magic
+timestamp 1787495258
+transform 1 0 1350 0 1 450
+box -1350 -450 3533 3035
+use fda2  fda2_1
+timestamp 1787495258
+transform 1 0 1330 0 1 -3595
+box -1350 -450 3533 3035
+use fda2  fda2_2
+timestamp 1787495258
+transform 1 0 1365 0 1 4395
+box -1350 -450 3533 3035
+use fda2  fda2_3
+timestamp 1787495258
+transform 1 0 1400 0 1 8600
+box -1350 -450 3533 3035
+use tia  tia_0 jz_tia/magic
+timestamp 1787484077
+transform 1 0 1525 0 1 -8425
+box 0 -1160 2933 3111
+<< end >>

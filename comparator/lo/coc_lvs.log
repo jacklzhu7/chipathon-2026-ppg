@@ -1,0 +1,61 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell nfet_03v3_YZP3EJ in circuit coc (0)(2 instances)
+Flattening unmatched subcell nfet_03v3_JZFPMS in circuit coc (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_ZYBKN6 in circuit coc (0)(4 instances)
+Flattening unmatched subcell pfet_03v3_PBNMMU in circuit coc (0)(2 instances)
+Flattening unmatched subcell nfet_03v3_E7QSTY in circuit coc (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: coc                             |Circuit 2: coc                             
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (6)                              |nfet_03v3 (6)                              
+pfet_03v3 (6)                              |pfet_03v3 (6)                              
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: coc                             |Circuit 2: coc                             
+-------------------------------------------|-------------------------------------------
+Vout                                       |Vout                                       
+VDD                                        |VDD                                        
+Vinp                                       |Vinp                                       
+Vinn                                       |Vinn                                       
+Ibias5u                                    |Ibias5u                                    
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes coc and coc are equivalent.
+
+Final result: Circuits match uniquely.
+.

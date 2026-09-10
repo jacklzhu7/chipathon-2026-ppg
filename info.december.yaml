@@ -1,0 +1,74 @@
+# ----- ------ ----- ----- ------ ----- ----- ------ -----
+# Chipathon 2026: Project configuration
+# LICENSE: Apache License Version 2.0
+# http://www.apache.org/licenses/
+# ----- ------ ----- ----- ------ ----- ----- ------ -----
+
+# data will be pulled from main branch of the repo.
+# please be sure that the main branch contains the data you want to submit.
+# This file will be updated with more information later
+
+# ======================================================
+# Project metadata (used for documentation / review)
+# ======================================================
+project:
+  title: "PPG Sensor Circuit"             # Project title (e.g. "Simple CPU", "PLL", "ADC")
+  team: "The Chip Wizards"                      # Your Team name
+  discord: ""                   # Optional: Discord username (for support / communication)
+  description: "PDK test data"  # Short one-line description
+  lvs_config: "./lvs_config.json"
+
+pins: 
+  - name: GND
+    io_type: ground
+  - name: Ibias
+    io_type: analog
+    secondary_esd: false
+  - name: LED_K
+    io_type: analog
+    secondary_esd: false
+  - name: VSET 
+    io_type: analog
+    secondary_esd: false
+  - name: Comparator_out
+    io_type: analog
+    secondary_esd: false
+  - name: VDD
+    io_type: power
+  - name: HPF_outp
+    io_type: analog
+    secondary_esd: false
+  - name: HPF_outn
+    io_type: analog
+    secondary_esd: false
+  - name: HPF_inp
+    io_type: analog
+    secondary_esd: false
+  - name: HPF_inn
+    io_type: analog
+    secondary_esd: false
+  - name: Vb1
+    io_type: analog
+    secondary_esd: false
+  - name: Vb2
+    io_type: analog
+    secondary_esd: false
+  - name: Vb3
+    io_type: analog
+    secondary_esd: false
+  - name: Vb4
+    io_type: analog
+    secondary_esd: false
+  - name: LPF_outp
+    io_type: analog
+    secondary_esd: false
+  - name: LPF_outn
+    io_type: analog
+    secondary_esd: false
+  - name: LPF_inp
+    io_type: analog
+    secondary_esd: false
+  - name: LPF_inn
+    io_type: analog
+    secondary_esd: false
+

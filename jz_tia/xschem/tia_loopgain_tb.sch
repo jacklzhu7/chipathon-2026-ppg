@@ -28,13 +28,6 @@ N 390 -230 390 -140 {lab=Vtest}
 N 390 -140 390 -130 {lab=Vtest}
 N 390 -70 390 -50 {lab=0}
 N 440 -330 500 -330 {lab=Vtest}
-C {code.sym} 310 -680 0 0 {name=MODELS only_toplevel=true  
-format="tcleval( @value )" 
-value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-.lib $::180MCU_MODELS/smbb000149.ngspice typical
-"}
 C {vsource.sym} 850 -400 0 0 {name=V1 value=3.3 savecurrent=false}
 C {vdd.sym} 850 -450 0 0 {name=l2 lab=VDD}
 C {gnd.sym} 850 -370 0 0 {name=l11 lab=0}
@@ -42,7 +35,7 @@ C {gnd.sym} 10 -240 0 0 {name=l6 lab=0
 }
 C {capa.sym} 10 -270 0 0 {name=C3
 m=1
-value=11p
+value=17p
 footprint=1206
 device="ceramic capacitor"
 }
@@ -57,7 +50,7 @@ m=1
 }
 C {capa.sym} 230 -140 1 0 {name=C5
 m=1
-value=2p
+value=3p
 footprint=1206
 device="ceramic capacitor"
 }
@@ -99,4 +92,13 @@ device="ceramic capacitor"
 }
 C {gnd.sym} 500 -270 0 0 {name=l1 lab=0
 }
-C {chipathon-2026-ppg/jz_tia/two_stage_miller_larger_forsym.sym} 200 -330 0 0 {name=x1}
+C {code.sym} 340 -630 0 0 {name=MODELS only_toplevel=true  
+format="tcleval( @value )" 
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+"}
+C {/foss/designs/chipathon-2026-ppg/jz_tia/xschem/two_stage_miller_larger_forlayout.sym} 200 -320 0 0 {name=x1}
