@@ -1,0 +1,11 @@
+.subckt jz_bias VDD Ibias5u Vbias Ibias25u_0 Ibias25u_1 Ibias25u_2 Ibias25u_3 Ibias25u_4
+M1 net1 net1 VDD VDD pfet_03v3 L=2u W=6.99u
+M2 Ibias5u net1 VDD VDD pfet_03v3 L=2u W=1.5u
+M3 Vbias Vbias GND GND nfet_03v3 L=3u W=1.1u
+M4 net1 Vbias GND GND nfet_03v3 L=3u W=1.1u
+M5 Ibias25u_0 Vbias GND GND nfet_03v3 L=3u W=1.1u
+M6 Ibias25u_1 Vbias GND GND nfet_03v3 L=3u W=1.1u
+M7 Ibias25u_2 Vbias GND GND nfet_03v3 L=3u W=1.1u
+M8 Ibias25u_3 Vbias GND GND nfet_03v3 L=3u W=1.1u
+M9 Ibias25u_4 Vbias GND GND nfet_03v3 L=3u W=1.1u
+.ends
