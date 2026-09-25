@@ -251,10 +251,10 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {gnd.sym} -440 320 0 0 {name=l2 lab=0}
-C {isource.sym} -310 120 0 0 {name=I0 value=3u}
-C {vsource.sym} -420 100 0 0 {name=Vref value="DC 1.7 SIN(1.7 20m 1k 0 0 180)" savecurrent=false}
+C {isource.sym} -310 120 0 0 {name=I0 value=5u}
+C {vsource.sym} -420 100 0 0 {name=Vref value="DC 1.7 SIN(1.7 20m 1 0 0 180)" savecurrent=false}
 C {gnd.sym} -420 130 0 0 {name=l4 lab=0}
-C {vsource.sym} -560 240 0 0 {name=Vin value="DC 1.7 SIN(1.7 20m 1k)
+C {vsource.sym} -560 240 0 0 {name=Vin value="DC 1.7 SIN(1.7 20m 1)
 " savecurrent=false}
 C {gnd.sym} -560 270 0 0 {name=l5 lab=0}
 C {vdd.sym} -560 -180 0 0 {name=l6 lab=VDD}
@@ -271,10 +271,25 @@ device="ceramic capacitor"}
 C {opin.sym} 1030 20 1 0 {name=p1 lab=Vout}
 C {lab_pin.sym} -500 210 1 0 {name=p2 sig_type=std_logic lab=vin}
 C {lab_pin.sym} -350 70 1 0 {name=p3 sig_type=std_logic lab=vref}
-C {code_shown.sym} -1330 -40 0 0 {name=NGSPICE only_toplevel=false value=".control
-save v(vin) v(vout)
+C {code_shown.sym} -1250 -130 0 0 {name=NGSPICE only_toplevel=false value=".control
 
-dc Vin 1.80 1.60 -0.1m
+set noaskquit
+save v(vin) v(vref) v(vout)
+
+* ============================================================
+* COMPARATOR TRANSIENT TEST
+* Mimics LPF output:
+* Vin = 1.7 V +/- 20 mV = 40 mVpp
+* Vref = fixed 1.7 V
+* Frequency = 1 Hz
+* Expected Vout = ~0 V <-> ~3.3 V
+* ============================================================
+
+tran 1m 6
+
+write comparator_sine_40mVpp.raw v(vin) v(vref) v(vout)
+
+plot v(vin) v(vref)
 plot v(vout)
 
 .endc
