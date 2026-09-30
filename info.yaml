@@ -12,15 +12,15 @@
 # Project metadata (used for documentation / review)
 # ======================================================
 project:
-  title: "PDK test"             # Project title (e.g. "Simple CPU", "PLL", "ADC")
-  team: ""                      # Your Team name
+  title: "PPG Sensor Circuit"             # Project title (e.g. "Simple CPU", "PLL", "ADC")
+  team: "The Chip Wizards"                      # Your Team name
   discord: ""                   # Optional: Discord username (for support / communication)
-  description: "PDK test data"  # Short one-line description
-  lvs_config: "<relative-path-to-lvs_config.json>"
+  description: "PPG heart-rate detection"  # Short one-line description
+  lvs_config: "./lvs_config.json"
   gf_def_ready: true            # data ready for def generation with global foundries' pad frame
   ws_def_ready: true            # data ready for def generation with wafer space pad frame
-  drc_ready: true               # data ready for integration and DRC
-  lvs_ready: true               # data ready for integrated LVS
+  drc_ready: false               # data ready for integration and DRC
+  lvs_ready: false               # data ready for integrated LVS
 
 # There are 7 i/o pin types and the associated connections from the user area to the i/o pad cell
 # all control signals must be connected
@@ -65,19 +65,39 @@ project:
 #   Note: secondary_esd flag is ignored
 
 pins: 
-  - name: vss
-    io_type: ground 
-  - name: reset_n
-    io_type: input_cmos
-  - name: clock 
-    io_type: input_schmitt
-  - name: gpio0
-    io_type: bidirectional
-  - name: high_drive
-    io_type: bidirectional_24ma
-  - name: sensor
+  - name: GND
+    io_type: ground
+  - name: Ibias
     io_type: analog
-  - name: analog_out
+  - name: LED_K
     io_type: analog
-  - name: vdd
-    io_type: power  # subsequent power/ground cells cause a break in the I/O power rails
+  - name: VSET 
+    io_type: analog
+  - name: Comparator_out
+    io_type: analog
+  - name: VDD
+    io_type: power
+  - name: HPF_outp
+    io_type: analog
+  - name: HPF_outn
+    io_type: analog
+  - name: HPF_inp
+    io_type: analog
+  - name: HPF_inn
+    io_type: analog
+  - name: Vb1
+    io_type: analog
+  - name: Vb2
+    io_type: analog
+  - name: Vb3
+    io_type: analog
+  - name: Vb4
+    io_type: analog
+  - name: LPF_outp
+    io_type: analog
+  - name: LPF_outn
+    io_type: analog
+  - name: LPF_inp
+    io_type: analog
+  - name: LPF_inn
+    io_type: analog
