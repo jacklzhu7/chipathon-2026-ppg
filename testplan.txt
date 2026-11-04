@@ -1,0 +1,2 @@
+Test plan:
+The fabricated chip will be tested using the facilities at Columbia University. We will verify the functionality of the signal chain using a waveform generator and oscilloscope. Upon assembly with the LED onto a PCB, the PPG readout can then be tested on real subjects (our team members).
