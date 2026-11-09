@@ -12,7 +12,6 @@ N 540 -170 740 -170 {lab=VDD}
 N -440 320 -310 320 {lab=GND}
 N -310 280 -310 320 {lab=GND}
 N 370 280 370 320 {lab=GND}
-<<<<<<< HEAD
 N -310 320 370 320 {lab=GND}
 N 370 320 740 320 {lab=GND}
 N -270 250 330 250 {lab=#net1}
@@ -21,7 +20,6 @@ N -180 40 -180 110 {lab=#net2}
 N -180 90 -100 90 {lab=#net2}
 N -100 90 -100 130 {lab=#net2}
 N -100 130 -100 140 {lab=#net2}
-=======
 N -180 320 370 320 {lab=GND}
 N 370 320 910 320 {lab=GND}
 N -240 250 330 250 {lab=VDD}
@@ -30,12 +28,9 @@ N -100 140 880 140 {lab=#net1}
 N -180 90 -180 110 {lab=#net1}
 N -180 90 -100 90 {lab=#net1}
 N -100 90 -100 140 {lab=#net1}
->>>>>>> 41146f7 (add ibias pin)
 N -420 70 -40 70 {lab=Vinn}
 N -180 -170 910 -170 {lab=VDD}
 N -180 -170 -180 -20 {lab=VDD}
-N -310 -170 -310 90 {lab=VDD}
-<<<<<<< HEAD
 N 40 -140 220 -140 {lab=#net3}
 N -140 10 0 10 {lab=#net3}
 N 0 -110 0 10 {lab=#net3}
@@ -65,7 +60,6 @@ N 910 200 910 320 {lab=GND}
 N 0 100 -0 110 {lab=#net5}
 N -0 110 740 110 {lab=#net5}
 N 740 90 740 110 {lab=#net5}
-=======
 N 110 -140 220 -140 {lab=#net2}
 N -140 10 0 10 {lab=#net2}
 N 0 0 0 10 {lab=#net2}
@@ -88,12 +82,10 @@ N 910 20 910 110 {lab=Vout}
 N 0 100 -0 110 {lab=#net4}
 N 370 110 740 110 {lab=#net4}
 N 740 90 740 110 {lab=#net4}
->>>>>>> 41146f7 (add ibias pin)
 N 780 60 830 60 {lab=Vinp}
 N 830 60 830 210 {lab=Vinp}
 N 910 20 1100 20 {lab=Vout
 }
-<<<<<<< HEAD
 N -560 210 -500 210 {lab=Vinp}
 N -310 150 -310 220 {lab=#net1}
 N -500 210 -0 210 {lab=Vinp}
@@ -132,7 +124,6 @@ N -210 -170 -180 -170 {lab=VDD}
 N -420 -170 -310 -170 {lab=VDD}
 N -310 -170 -210 -170 {lab=VDD}
 N -140 140 870 140 {lab=#net2}
-=======
 N -560 210 830 210 {lab=Vinp}
 N -310 180 -310 220 {lab=VDD}
 N -310 180 -240 180 {lab=VDD}
@@ -156,7 +147,6 @@ N -0 110 370 110 {lab=#net4}
 N -310 90 -310 150 {lab=VDD}
 N -310 -50 -310 90 {lab=VDD}
 N -410 90 -310 90 {lab=VDD}
->>>>>>> 41146f7 (add ibias pin)
 C {title.sym} -190 375 0 0 {name=comparator_design author="Zoe Zhao"}
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 20 -140 0 1 {name=M1
 L=0.56u

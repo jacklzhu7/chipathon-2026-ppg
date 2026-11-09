@@ -77,4 +77,4 @@ model=ppolyf_u_1k
 spiceprefix=X
 m=1}
 C {lab_pin.sym} 370 -530 0 0 {name=p14 sig_type=std_logic lab=GND}
-C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 360 -290 0 0 {name=x1}
+C {xschem/foldedcasc_cmfb_forlayout.sym} 360 -290 0 0 {name=x1}

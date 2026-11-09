@@ -1,0 +1,504 @@
+timestamp 1794169523
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use ppolyf_u_1k_SBHPZ7 ppolyf_u_1k_SBHPZ7_0 -1 0 1636 0 -1 12818
+use ppolyf_u_1k_LUSA4K XR2 1 0 9655 0 1 13886
+use ppolyf_u_1k_SBHPZ7 XR5 -1 0 7514 0 -1 12807
+use foldedcasc_cmfb_forlayout_new foldedcasc_cmfb_forlayout_new_0 1 0 0 0 1 0
+use ppolyf_u_1k_LUSA4K XR1 1 0 -504 0 1 13888
+port "Vb3" 8 4460 4840 4700 4900 m2
+port "Vb2" 9 4460 6720 4700 6820 m2
+port "Vb1" 10 4680 11940 4920 12040 m2
+port "Vb4" 11 4500 14900 4640 15000 m2
+port "Voutn" 2 5560 15760 5790 15820 m2
+port "Ibias25u" 12 3320 12620 3400 13140 m1
+port "Vinp_FDA" 7 7420 13360 7600 13420 m1
+port "Vinn_FDA" 6 1540 13360 1740 13420 m1
+port "VDD" 13 4500 15520 4640 15660 m1
+port "Voutp" 1 3280 15760 3510 15820 m2
+port "GND" 14 6020 10100 6240 10260 pw
+node "net2" 0 40.0642 5060 10580 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4800 320 0 0 0 0
+node "net1" 0 40.0642 4040 10580 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4800 320 0 0 0 0
+node "net5" 0 20.8016 4560 12080 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4800 320 0 0 0 0
+node "Vb3" 0 102.512 4460 4840 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 600 0 0 0 0 0 0
+node "Vb2" 0 121.83 4460 6720 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24000 680 0 0 0 0 0 0
+node "Vb1" 0 122.223 4680 11940 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24000 680 0 0 0 0 0 0
+node "Vb4" 0 83.4204 4500 14900 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14000 480 0 0 0 0 0 0
+node "m1_4500_5100#" 0 132.945 4500 5100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20000 600 0 0 0 0 0 0 0 0
+node "m1_10540_11920#" 1 223.931 10540 11920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_9980_11920#" 1 213.836 9980 11920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_9420_11920#" 1 213.836 9420 11920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_8860_11920#" 1 213.836 8860 11920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_8300_11920#" 1 198.874 8300 11920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_380_11920#" 1 198.874 380 11920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_n180_11920#" 1 213.836 -180 11920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_n740_11920#" 1 213.836 -740 11920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_n1300_11920#" 1 213.836 -1300 11920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_n1860_11920#" 1 223.931 -1860 11920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "Voutn" 6 2307.64 5560 15760 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10000 400 614000 12480 0 0 0 0 0 0
+node "m1_10260_15800#" 1 217.742 10260 15800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_9700_15800#" 1 213.836 9700 15800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_9140_15800#" 1 213.836 9140 15800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_8580_15800#" 1 213.836 8580 15800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "Vinp_OTA" 6 3678.86 4920 11720 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 753200 8560 366000 7720 62000 1440 0 0 0 0
+node "Ibias25u" 1 267.062 3320 12620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41600 1200 0 0 0 0 0 0 0 0
+node "Vinp_FDA" 0 95.2206 7420 13360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0
+node "Vinn_FDA" 0 103.899 1540 13360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0 0 0 0 0
+node "VDD" 0 124.766 4500 15520 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19600 560 0 0 0 0 0 0 0 0
+node "Vinn_OTA" 6 3675.16 660 12200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 753200 8560 366000 7720 62000 1440 0 0 0 0
+node "m1_100_15800#" 1 213.836 100 15800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_n460_15800#" 1 213.836 -460 15800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_n1020_15800#" 1 213.836 -1020 15800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "m1_n1580_15800#" 1 217.999 -1580 15800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28800 1080 0 0 0 0 0 0 0 0
+node "Voutp" 6 2307.9 3280 15760 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10000 400 614000 12480 0 0 0 0 0 0
+substrate "GND" 0 0 6020 10100 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_9420_11920#" "m1_8860_11920#" 34.7246
+cap "m1_n1020_15800#" "m1_n1580_15800#" 34.7246
+cap "Vb1" "Vinp_OTA" 19.4774
+cap "m1_10260_15800#" "Voutn" 72.5856
+cap "m1_n180_11920#" "m1_380_11920#" 34.7246
+cap "Voutp" "m1_n1580_15800#" 70.6225
+cap "Voutp" "Vinn_OTA" 103.158
+cap "Voutn" "m1_8580_15800#" 57.1394
+cap "Vb1" "Vinn_OTA" 2.48965
+cap "m1_n1020_15800#" "m1_n460_15800#" 34.7246
+cap "m1_4500_5100#" "Vb3" 8.27086
+cap "m1_8300_11920#" "m1_8860_11920#" 34.7246
+cap "Ibias25u" "Vinn_OTA" 4.33162
+cap "Vinn_FDA" "Vinn_OTA" 7.8767
+cap "Voutp" "m1_n460_15800#" 57.1394
+cap "m1_9980_11920#" "m1_9420_11920#" 34.7246
+cap "Voutn" "Vinp_OTA" 103.158
+cap "Voutp" "m1_n1020_15800#" 57.1394
+cap "VDD" "Vb4" 2.03853
+cap "Vb2" "m1_4500_5100#" 0.279146
+cap "m1_n740_11920#" "m1_n180_11920#" 34.7246
+cap "m1_9140_15800#" "m1_9700_15800#" 34.7246
+cap "m1_8580_15800#" "Vinp_OTA" 34.7246
+cap "m1_9980_11920#" "m1_10540_11920#" 34.7246
+cap "net2" "net1" 7.85278
+cap "m1_100_15800#" "Vinn_OTA" 34.7246
+cap "net2" "Vinp_OTA" 0.0760547
+cap "m1_380_11920#" "Vinn_OTA" 41.9771
+cap "net5" "Vinp_OTA" 19.275
+cap "Voutn" "Voutp" 7.19015
+cap "Voutn" "m1_9140_15800#" 57.1394
+cap "m1_100_15800#" "m1_n460_15800#" 34.7246
+cap "net1" "Vinn_OTA" 0.0760547
+cap "Voutn" "m1_9700_15800#" 57.1394
+cap "Vinp_FDA" "Vinp_OTA" 7.71876
+cap "Vinp_OTA" "Vinn_OTA" 61.4443
+cap "net5" "Vinn_OTA" 19.275
+cap "m1_10260_15800#" "m1_9700_15800#" 34.7246
+cap "m1_n740_11920#" "m1_n1300_11920#" 34.7246
+cap "m1_9140_15800#" "m1_8580_15800#" 34.7246
+cap "m1_8300_11920#" "Vinp_OTA" 41.9771
+cap "Voutp" "m1_100_15800#" 57.1394
+cap "m1_n1860_11920#" "m1_n1300_11920#" 34.7246
+cap "foldedcasc_cmfb_forlayout_new_0/GND" "foldedcasc_cmfb_forlayout_new_0/Vb3" -8.27086
+cap "foldedcasc_cmfb_forlayout_new_0/GND" "foldedcasc_cmfb_forlayout_new_0/Vb2" -0.112368
+cap "foldedcasc_cmfb_forlayout_new_0/GND" "foldedcasc_cmfb_forlayout_new_0/Vb2" -0.166778
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/m1_4000_9940#" -0.0051889
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" -0.045554
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" 0.825666
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" 0.830608
+cap "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" -0.0488439
+cap "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" "foldedcasc_cmfb_forlayout_new_0/m1_5020_11060#" -0.00726446
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/Vb1" 0.465652
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" -2.35641
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4000_9940#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -0.636987
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4000_9940#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 15.2541
+cap "foldedcasc_cmfb_forlayout_new_0/m1_5020_11060#" "foldedcasc_cmfb_forlayout_new_0/m1_4000_9940#" -3.92639
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 0.160631
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 18.6238
+cap "foldedcasc_cmfb_forlayout_new_0/m1_5020_11060#" "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" -0.388049
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/m1_4000_9940#" -1.10906
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" 1.56845
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" -1.41438
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM6/a_52_n1818#" 0.604005
+cap "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" -0.654398
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 3.4687
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4000_9940#" "foldedcasc_cmfb_forlayout_new_0/Ibias25u" -0.0209833
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/Vinn" -1.43248
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/m1_4000_9940#" -0.0472598
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -0.697552
+cap "ppolyf_u_1k_SBHPZ7_0/a_n312_n834#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 0.294069
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" 11.487
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" -0.208882
+cap "foldedcasc_cmfb_forlayout_new_0/m1_5020_11060#" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" -0.13611
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 2.32757
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4000_9940#" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" -0.135646
+cap "foldedcasc_cmfb_forlayout_new_0/m1_5020_11060#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -0.636987
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/m1_5020_11060#" -0.778735
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -0.697552
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" -0.66682
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" -0.207872
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM6/a_n390_n1912#" 0.294069
+cap "foldedcasc_cmfb_forlayout_new_0/m1_5020_11060#" "foldedcasc_cmfb_forlayout_new_0/m1_4000_9940#" -3.92639
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n164_n1818#" 0.618196
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/m1_5020_11060#" 19.5339
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" 3.46305
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" 8.92453
+cap "foldedcasc_cmfb_forlayout_new_0/m1_5020_11060#" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" -0.0534537
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" -0.759529
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" 0.16172
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/Vinn" -1.43248
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/Vb1" 0.470321
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" 16.395
+cap "XR1/a_40_n1972#" "XR1/a_n1572_n2184#" 0.426737
+cap "XR1/a_n1080_n1972#" "XR1/a_n520_n1972#" -24.3607
+cap "XR1/a_n1080_n1972#" "XR1/a_n1572_n2184#" 32.4545
+cap "XR1/a_n520_n1972#" "XR1/a_n1572_n2184#" 29.4166
+cap "XR1/a_40_n1972#" "XR1/a_n520_n1972#" -24.3607
+cap "XR1/a_n1572_n2184#" "XR1/a_1160_n1972#" 26.1674
+cap "XR1/a_n1572_n2184#" "XR1/a_40_n1972#" 29.1236
+cap "XR1/a_1160_n1972#" "XR1/a_600_n1972#" -24.3607
+cap "XR1/a_40_n1972#" "XR1/a_600_n1972#" -24.3607
+cap "ppolyf_u_1k_SBHPZ7_0/a_n100_500#" "XR1/a_1160_n1972#" 1.38623
+cap "XR1/a_n1572_n2184#" "XR1/a_600_n1972#" 29.6002
+cap "ppolyf_u_1k_SBHPZ7_0/a_n100_500#" "XR1/a_n1572_n2184#" 0.31523
+cap "XR1/a_n1572_n2184#" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" 3.47746
+cap "ppolyf_u_1k_SBHPZ7_0/a_n100_500#" "ppolyf_u_1k_SBHPZ7_0/a_n100_n622#" -1.35674
+cap "XR1/a_n1572_n2184#" "XR1/a_40_n1972#" -0.0498347
+cap "XR1/a_n1572_n2184#" "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" 35.7401
+cap "ppolyf_u_1k_SBHPZ7_0/a_n100_500#" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" 0.0293934
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "XR1/a_1160_n1972#" 0.212044
+cap "XR1/a_n1572_n2184#" "XR1/a_1160_n1972#" 7.4802
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "ppolyf_u_1k_SBHPZ7_0/a_n100_500#" 0.0900076
+cap "XR1/a_n1572_n2184#" "ppolyf_u_1k_SBHPZ7_0/a_n100_500#" 455.137
+cap "XR1/a_n1572_n2184#" "ppolyf_u_1k_SBHPZ7_0/a_n100_n622#" 0.0905259
+cap "ppolyf_u_1k_SBHPZ7_0/a_n100_500#" "XR1/a_1160_n1972#" 5.40629
+cap "XR1/a_n1572_n2184#" "XR1/a_600_n1972#" -0.183535
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/a_n164_n643#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 0.412452
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" "foldedcasc_cmfb_forlayout_new_0/Vinp" -0.00401294
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" -31.5356
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" 32.5675
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/Ibias25u" 26.2236
+cap "XR1/a_n1572_n2184#" "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" 31.371
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "XR1/a_n1572_n2184#" 2.27544
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" -0.0201954
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 135.129
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.011371
+cap "foldedcasc_cmfb_forlayout_new_0/Ibias25u" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" -1.40821
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM10/a_n468_n543#" 0.244476
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/a_268_n643#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 0.509268
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/a_n380_n643#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 0.509268
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" 252.25
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/Vb1" 232.753
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/a_n52_n599#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 0.249054
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" -8.03129
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" -2.24344
+cap "foldedcasc_cmfb_forlayout_new_0/Ibias25u" "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" -8.0105
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/a_52_n643#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 0.412452
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/Ibias25u" -16.181
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" -8.79586
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -15.0956
+cap "XR1/a_n1572_n2184#" "foldedcasc_cmfb_forlayout_new_0/Ibias25u" 0.14021
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" "XR1/a_n1572_n2184#" 7.29336
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -11.2177
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" 79.7593
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" 1.05049
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/Vb1" 244.116
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/Ibias25u" -62.3147
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" -19.6319
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/Ibias25u" 122.28
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" -39.2639
+cap "ppolyf_u_1k_SBHPZ7_0/a_n312_n834#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -0.071874
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" -0.218602
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" -5.27761
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" 105.323
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" 6.87821
+cap "foldedcasc_cmfb_forlayout_new_0/Ibias25u" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" -2.11231
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" -23.272
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" 39.7347
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -12.7699
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 158.57
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" "foldedcasc_cmfb_forlayout_new_0/Ibias25u" -8.10788
+cap "foldedcasc_cmfb_forlayout_new_0/XM13/a_124_996#" "foldedcasc_cmfb_forlayout_new_0/Vinn" 0.104626
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/Vinp" -23.1582
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" -0.426208
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n376_n480#" -9.43
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 3.52874
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM1/a_n116_n279#" -2.46154
+cap "foldedcasc_cmfb_forlayout_new_0/XM6/a_52_n1818#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -0.0178842
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM1/a_n116_n279#" -5.08132
+cap "foldedcasc_cmfb_forlayout_new_0/XM1/a_n116_n279#" "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" -0.322077
+cap "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 79.9538
+cap "foldedcasc_cmfb_forlayout_new_0/XM2/a_28_n345#" "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" -0.358353
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 40.4789
+cap "foldedcasc_cmfb_forlayout_new_0/XM11/a_n164_n643#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.272513
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" -6.00037
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/Vinp" -23.156
+cap "foldedcasc_cmfb_forlayout_new_0/XM2/a_28_n345#" "foldedcasc_cmfb_forlayout_new_0/Vinp" -6.13766
+cap "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 144.298
+cap "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" -8.13451
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/Vinp" 372.787
+cap "foldedcasc_cmfb_forlayout_new_0/XM6/a_n390_n1912#" "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" 16.0317
+cap "foldedcasc_cmfb_forlayout_new_0/XM11/a_n380_n643#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.509268
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" 0.742415
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" -17.5059
+cap "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" -0.0201954
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" -61.9153
+cap "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/Vinn" -0.00401294
+cap "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 19.7066
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n164_n1818#" -0.0178842
+cap "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" -19.6319
+cap "foldedcasc_cmfb_forlayout_new_0/XM14/a_124_996#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.191457
+cap "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -11.741
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" -1.17572
+cap "foldedcasc_cmfb_forlayout_new_0/XM14/a_n196_996#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.0313879
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM6/a_n390_n1912#" -0.071874
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" -0.431111
+cap "foldedcasc_cmfb_forlayout_new_0/XM2/a_28_n345#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -2.71618
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n252_n1639#" -10.1719
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/Vb1" 0.0114166
+cap "foldedcasc_cmfb_forlayout_new_0/XM14/a_n36_996#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.157268
+cap "foldedcasc_cmfb_forlayout_new_0/XM14/a_28_n1024#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.252261
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 383.999
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/Vb1" 87.1824
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n390_n1912#" 2.74036
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM11/a_268_n643#" 0.507539
+cap "foldedcasc_cmfb_forlayout_new_0/Vb1" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" -3.30379
+cap "foldedcasc_cmfb_forlayout_new_0/XM11/a_380_n599#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.244476
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM11/a_n52_n599#" 0.249054
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "XR5/a_n100_n622#" -1.25012
+cap "foldedcasc_cmfb_forlayout_new_0/XM3/w_n358_n455#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 74.5439
+cap "foldedcasc_cmfb_forlayout_new_0/XM3/w_n358_n455#" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n390_n1912#" 47.8675
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM7/a_n390_n1912#" 82.352
+cap "foldedcasc_cmfb_forlayout_new_0/XM3/w_n358_n455#" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" -0.445164
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM11/a_52_n643#" 0.412452
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" 58.0544
+cap "foldedcasc_cmfb_forlayout_new_0/XM7/a_n390_n1912#" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" 11.3201
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM11/a_n164_n643#" 0.139939
+cap "foldedcasc_cmfb_forlayout_new_0/XM3/w_n358_n455#" "foldedcasc_cmfb_forlayout_new_0/Vb1" -0.385514
+cap "XR2/a_n520_n1972#" "XR5/a_n312_n834#" 14.4809
+cap "XR2/a_n520_n1972#" "XR2/a_n1080_n1972#" -23.9268
+cap "XR5/a_n312_n834#" "XR2/a_n1080_n1972#" 31.83
+cap "XR5/a_n312_n834#" "foldedcasc_cmfb_forlayout_new_0/XM9/w_n738_n690#" 4.9331
+cap "XR2/a_n1080_n1972#" "foldedcasc_cmfb_forlayout_new_0/XM9/w_n738_n690#" 0.216959
+cap "XR5/a_n312_n834#" "XR5/a_n100_500#" 356.104
+cap "XR2/a_n1080_n1972#" "XR5/a_n100_500#" 6.74824
+cap "XR5/a_n312_n834#" "XR2/a_40_n1972#" -0.0498347
+cap "XR5/a_n312_n834#" "XR2/a_40_n1972#" 28.4472
+cap "XR2/a_n520_n1972#" "XR2/a_40_n1972#" -23.9268
+cap "XR2/a_600_n1972#" "XR5/a_n312_n834#" 28.4472
+cap "XR2/a_600_n1972#" "XR2/a_1160_n1972#" -11.9478
+cap "XR2/a_n520_n1972#" "XR5/a_n312_n834#" 13.7827
+cap "XR2/a_600_n1972#" "XR2/a_40_n1972#" -23.9268
+cap "XR2/a_n1572_n2184#" "XR2/a_1160_n1972#" 32.1399
+cap "XR2/a_n1572_n2184#" "XR2/a_40_n1972#" -0.0498347
+cap "XR2/a_600_n1972#" "XR2/a_n1572_n2184#" -0.183535
+cap "XR2/a_600_n1972#" "XR2/a_1160_n1972#" -11.979
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" "ppolyf_u_1k_SBHPZ7_0/a_n100_n622#" 0.163
+cap "XR1/a_n1572_n2184#" "foldedcasc_cmfb_forlayout_new_0/Voutn" 0.310797
+cap "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" "XR1/a_n1572_n2184#" 2.20288
+cap "ppolyf_u_1k_SBHPZ7_0/a_n100_n622#" "XR1/a_1160_1850#" -5.13857
+cap "XR1/a_n1572_n2184#" "XR1/a_1160_1850#" 414.592
+cap "XR1/a_n1572_n2184#" "foldedcasc_cmfb_forlayout_new_0/XM8/w_n738_n690#" 2.81288
+cap "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" "XR1/a_n1572_n2184#" 22.3874
+cap "XR1/a_n1572_n2184#" "ppolyf_u_1k_SBHPZ7_0/a_n100_n622#" 11.8264
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" 7.54743
+cap "XR1/a_n1572_n2184#" "foldedcasc_cmfb_forlayout_new_0/VDD" 20.7497
+cap "ppolyf_u_1k_SBHPZ7_0/a_n100_n622#" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" 0.9058
+cap "foldedcasc_cmfb_forlayout_new_0/Vb4" "foldedcasc_cmfb_forlayout_new_0/Vinn" 0.285132
+cap "XR1/a_n1572_n2184#" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" 4.5572
+cap "foldedcasc_cmfb_forlayout_new_0/Ibias25u" "XR1/a_n1572_n2184#" 0.0128424
+cap "foldedcasc_cmfb_forlayout_new_0/Vb4" "XR1/a_n1572_n2184#" 0.0121217
+cap "foldedcasc_cmfb_forlayout_new_0/VDD" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" -0.240114
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/VDD" 0.910662
+cap "foldedcasc_cmfb_forlayout_new_0/Vb4" "foldedcasc_cmfb_forlayout_new_0/XM8/a_n576_n387#" -0.0468963
+cap "foldedcasc_cmfb_forlayout_new_0/Vinn" "foldedcasc_cmfb_forlayout_new_0/Voutp" 0.0967283
+cap "foldedcasc_cmfb_forlayout_new_0/Vb4" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" -0.0413134
+cap "foldedcasc_cmfb_forlayout_new_0/VDD" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.287672
+cap "foldedcasc_cmfb_forlayout_new_0/VDD" "XR5/a_n312_n834#" 2.34178
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" 2.032
+cap "foldedcasc_cmfb_forlayout_new_0/VDD" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" -0.186756
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" 4.64457
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/Voutn" 0.0725559
+cap "foldedcasc_cmfb_forlayout_new_0/Vinp" "foldedcasc_cmfb_forlayout_new_0/Vb4" 0.111809
+cap "foldedcasc_cmfb_forlayout_new_0/XM11/a_n380_n643#" "XR5/a_n312_n834#" 0.0121041
+cap "foldedcasc_cmfb_forlayout_new_0/XM3/w_n358_n455#" "XR5/a_n312_n834#" 24.437
+cap "foldedcasc_cmfb_forlayout_new_0/Voutp" "XR5/a_n312_n834#" 0.351617
+cap "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 5.22514
+cap "XR5/a_n100_n622#" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" 1.10912
+cap "XR5/a_n312_n834#" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" 6.98486
+cap "foldedcasc_cmfb_forlayout_new_0/XM11/a_n380_n643#" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" -0.021215
+cap "foldedcasc_cmfb_forlayout_new_0/XM3/w_n358_n455#" "foldedcasc_cmfb_forlayout_new_0/XM9/a_n376_n480#" -0.0533587
+cap "XR5/a_n100_n622#" "foldedcasc_cmfb_forlayout_new_0/Vinp" -3.3053
+cap "XR5/a_n312_n834#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.233241
+cap "foldedcasc_cmfb_forlayout_new_0/XM11/a_n380_n643#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.171255
+cap "XR5/a_n100_n622#" "XR5/a_n312_n834#" 6.06847
+cap "foldedcasc_cmfb_forlayout_new_0/XM3/w_n358_n455#" "foldedcasc_cmfb_forlayout_new_0/Vinp" 0.614
+cap "XR5/a_n312_n834#" "XR5/a_n100_500#" 389.441
+cap "XR5/a_n100_500#" "XR5/a_n100_n622#" -1.76139
+cap "XR5/a_n312_n834#" "XR5/a_n100_n622#" 1.06189
+cap "XR5/a_n312_n834#" "foldedcasc_cmfb_forlayout_new_0/XM11/w_n630_n761#" 17.4509
+cap "XR1/a_n240_1850#" "XR1/a_n1572_n2184#" 14.5138
+cap "XR1/a_n1572_n2184#" "XR1/a_320_1850#" -0.0398458
+cap "XR1/a_n240_1850#" "XR1/a_n1360_1850#" 9.11209
+cap "XR1/a_320_1850#" "XR1/a_n1360_1850#" 0.230246
+cap "XR1/a_n800_1850#" "XR1/a_n1572_n2184#" 17.0824
+cap "XR1/a_n800_1850#" "XR1/a_n1360_1850#" 6.40749
+cap "XR1/a_n1572_n2184#" "XR1/a_n1360_1850#" 39.1349
+cap "XR1/a_n240_1850#" "XR1/a_n800_1850#" -24.3607
+cap "XR1/a_1160_1850#" "XR1/a_n240_1850#" 0.29349
+cap "XR1/a_n1360_1850#" "XR1/a_880_1850#" 13.2493
+cap "XR1/a_n1360_1850#" "XR1/a_n240_1850#" 4.95332
+cap "XR1/a_1160_1850#" "XR1/a_n1360_1850#" 0.746366
+cap "XR1/a_n1572_n2184#" "XR1/a_320_1850#" 17.8007
+cap "XR1/a_n1572_n2184#" "XR1/a_880_1850#" 17.8007
+cap "XR1/a_880_1850#" "XR1/a_320_1850#" -24.3607
+cap "XR1/a_320_1850#" "XR1/a_n240_1850#" -24.3607
+cap "XR1/a_n1572_n2184#" "XR1/a_n240_1850#" 2.71359
+cap "XR1/a_n1572_n2184#" "XR1/a_1160_1850#" 0.47715
+cap "XR1/a_1160_1850#" "XR1/a_320_1850#" 0.948323
+cap "XR1/a_1160_1850#" "XR1/a_880_1850#" -17.7134
+cap "XR1/a_n1572_n2184#" "XR1/a_n1360_1850#" 30.3215
+cap "XR1/a_n1360_1850#" "XR1/a_320_1850#" 13.2493
+cap "XR1/a_n1572_n2184#" "XR1/a_880_1850#" -2.03834
+cap "XR1/a_1160_1850#" "Voutp" -4.34681
+cap "XR1/a_n1572_n2184#" "XR1/a_320_1850#" -0.588836
+cap "XR1/a_n1572_n2184#" "foldedcasc_cmfb_forlayout_new_0/XM10/w_n630_n761#" 12.1277
+cap "XR1/a_n1572_n2184#" "XR1/a_1160_1850#" 387.56
+cap "XR1/a_n1572_n2184#" "Voutp" 56.6935
+cap "XR1/a_n1572_n2184#" "XR1/a_n240_1850#" -0.0409227
+cap "foldedcasc_cmfb_forlayout_new_0/Voutp" "foldedcasc_cmfb_forlayout_new_0/Vb4" 63.5961
+cap "XR1/a_1160_1850#" "foldedcasc_cmfb_forlayout_new_0/VDD" 0.175924
+cap "XR1/a_1160_1850#" "foldedcasc_cmfb_forlayout_new_0/Vb4" 0.0948344
+cap "foldedcasc_cmfb_forlayout_new_0/Voutp" "foldedcasc_cmfb_forlayout_new_0/Voutn" 3.87113
+cap "foldedcasc_cmfb_forlayout_new_0/VDD" "XR1/a_n1572_n2184#" 10.9992
+cap "foldedcasc_cmfb_forlayout_new_0/Vb4" "XR1/a_n1572_n2184#" 0.171306
+cap "foldedcasc_cmfb_forlayout_new_0/Voutp" "foldedcasc_cmfb_forlayout_new_0/VDD" 24.6531
+cap "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" "foldedcasc_cmfb_forlayout_new_0/Voutp" 10.481
+cap "foldedcasc_cmfb_forlayout_new_0/Voutp" "foldedcasc_cmfb_forlayout_new_0/VDD" 65.2234
+cap "foldedcasc_cmfb_forlayout_new_0/Voutn" "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" -0.160972
+cap "foldedcasc_cmfb_forlayout_new_0/Vb4" "foldedcasc_cmfb_forlayout_new_0/VDD" -2.03853
+cap "foldedcasc_cmfb_forlayout_new_0/Voutn" "foldedcasc_cmfb_forlayout_new_0/Voutp" 25.0709
+cap "foldedcasc_cmfb_forlayout_new_0/Voutn" "foldedcasc_cmfb_forlayout_new_0/VDD" -4.49713
+cap "foldedcasc_cmfb_forlayout_new_0/Voutp" "foldedcasc_cmfb_forlayout_new_0/Voutn" 55.1823
+cap "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" "foldedcasc_cmfb_forlayout_new_0/Voutn" 6.67019
+cap "foldedcasc_cmfb_forlayout_new_0/VDD" "foldedcasc_cmfb_forlayout_new_0/Voutn" 63.8023
+cap "foldedcasc_cmfb_forlayout_new_0/XM13/a_n276_n925#" "foldedcasc_cmfb_forlayout_new_0/Voutp" -0.135565
+cap "foldedcasc_cmfb_forlayout_new_0/Voutp" "foldedcasc_cmfb_forlayout_new_0/VDD" -5.93912
+cap "foldedcasc_cmfb_forlayout_new_0/Voutn" "foldedcasc_cmfb_forlayout_new_0/Vb4" 35.7925
+cap "foldedcasc_cmfb_forlayout_new_0/XM11/a_n380_n643#" "foldedcasc_cmfb_forlayout_new_0/Voutn" 27.7188
+cap "XR2/a_n1360_1850#" "foldedcasc_cmfb_forlayout_new_0/XM11/a_n380_n643#" 0.0905112
+cap "foldedcasc_cmfb_forlayout_new_0/Voutn" "foldedcasc_cmfb_forlayout_new_0/XM3/w_n358_n455#" 18.4054
+cap "XR2/a_n1360_1850#" "foldedcasc_cmfb_forlayout_new_0/XM3/w_n358_n455#" 0.175924
+cap "XR5/a_n312_n834#" "foldedcasc_cmfb_forlayout_new_0/XM11/a_n380_n643#" 0.172982
+cap "XR5/a_n312_n834#" "foldedcasc_cmfb_forlayout_new_0/XM3/w_n358_n455#" 10.9913
+cap "XR5/a_n312_n834#" "XR2/a_320_1850#" -0.0409227
+cap "XR2/a_n1360_1850#" "XR2/a_n240_1850#" 0.984091
+cap "XR2/a_n1360_1850#" "Voutn" -3.33613
+cap "XR5/a_n312_n834#" "foldedcasc_cmfb_forlayout_new_0/XM11/w_n630_n761#" 12.1148
+cap "XR2/a_n800_1850#" "XR2/a_n240_1850#" -11.6904
+cap "XR2/a_n1360_1850#" "XR2/a_n800_1850#" -16.2369
+cap "Voutn" "XR2/a_n800_1850#" 13.8265
+cap "XR2/a_n1360_1850#" "XR2/a_320_1850#" 0.308472
+cap "XR5/a_n312_n834#" "XR2/a_n240_1850#" -0.588836
+cap "XR5/a_n312_n834#" "Voutn" 71.1731
+cap "XR2/a_n1360_1850#" "XR5/a_n312_n834#" 364.84
+cap "XR5/a_n312_n834#" "XR2/a_n800_1850#" 16.87
+cap "XR2/a_320_1850#" "XR2/a_1160_1850#" 13.8456
+cap "XR5/a_n312_n834#" "XR2/a_880_1850#" 9.65542
+cap "XR2/a_n240_1850#" "XR5/a_n312_n834#" 18.9083
+cap "XR2/a_1160_1850#" "XR2/a_880_1850#" 7.09781
+cap "XR2/a_320_1850#" "XR2/a_880_1850#" -23.4099
+cap "XR2/a_320_1850#" "XR2/a_n240_1850#" -23.4099
+cap "XR2/a_1160_1850#" "XR2/a_n240_1850#" 13.8456
+cap "XR2/a_n800_1850#" "XR2/a_n240_1850#" -11.7195
+cap "XR2/a_1160_1850#" "XR5/a_n312_n834#" 30.6206
+cap "XR2/a_320_1850#" "XR5/a_n312_n834#" 18.9083
+cap "XR2/a_1160_1850#" "XR2/a_320_1850#" 0.822242
+cap "XR2/a_1160_1850#" "XR2/a_880_1850#" 0.26215
+cap "XR2/a_1160_1850#" "XR2/a_n1572_n2184#" 25.0652
+cap "XR2/a_n240_1850#" "XR2/a_n1572_n2184#" -0.0387689
+cap "XR2/a_1160_1850#" "XR2/a_n240_1850#" 0.237243
+cap "XR2/a_320_1850#" "XR2/a_n1572_n2184#" -0.557845
+cap "XR2/a_880_1850#" "XR2/a_n1572_n2184#" 8.8069
+cap "XR1/a_n1572_n2184#" "XR1/a_n1360_1850#" 3.62771
+cap "XR1/a_n240_1850#" "XR1/a_n1572_n2184#" 13.1106
+cap "XR1/a_n800_1850#" "XR1/a_n1572_n2184#" 14.7775
+cap "XR1/a_n1572_n2184#" "XR1/a_880_1850#" 14.7775
+cap "XR1/a_1160_1850#" "XR1/a_n1572_n2184#" 0.234502
+cap "XR1/a_n1572_n2184#" "XR1/a_320_1850#" 14.7775
+cap "XR1/a_n1572_n2184#" "XR1/a_n240_1850#" 1.66692
+cap "XR1/a_n1572_n2184#" "XR1/a_n1360_1850#" 5.24002
+cap "XR1/a_1160_1850#" "XR1/a_n1572_n2184#" 1.66692
+cap "Voutp" "XR1/a_n1572_n2184#" 3.33659
+cap "XR2/a_n1572_n2184#" "XR2/a_n800_1850#" 15.8777
+cap "XR2/a_n1360_1850#" "XR2/a_n1572_n2184#" 2.43905
+cap "XR2/a_n1572_n2184#" "Voutn" 6.16071
+cap "XR2/a_320_1850#" "XR2/a_n1572_n2184#" 15.8777
+cap "XR2/a_1160_1850#" "XR2/a_n1572_n2184#" 4.32609
+cap "XR2/a_n240_1850#" "XR2/a_n1572_n2184#" 15.8777
+cap "XR2/a_880_1850#" "XR2/a_n1572_n2184#" 8.18543
+cap "XR2/a_1160_1850#" "XR2/a_n1572_n2184#" 1.90257
+cap "XR2/a_880_1850#" "XR2/a_n1572_n2184#" 7.69225
+merge "XR2/a_880_1850#" "XR2/a_600_1850#" -192.629 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17505 -958 0 0 0 0 0 0 0 0
+merge "XR2/a_600_1850#" "m1_10260_15800#"
+merge "XR2/a_n1360_1850#" "XR5/a_n100_500#" -1970.47 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20478 -1126 0 0 0 0 0 0 0 0
+merge "XR5/a_n100_500#" "foldedcasc_cmfb_forlayout_new_0/Vinp"
+merge "foldedcasc_cmfb_forlayout_new_0/Vinp" "Vinp_OTA"
+merge "XR2/a_600_n1972#" "XR2/a_320_n1972#" -188.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17894 -962 0 0 0 0 0 0 0 0
+merge "XR2/a_320_n1972#" "m1_9980_11920#"
+merge "XR2/a_40_n1972#" "XR2/a_n240_n1972#" -188.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17894 -962 0 0 0 0 0 0 0 0
+merge "XR2/a_n240_n1972#" "m1_9420_11920#"
+merge "foldedcasc_cmfb_forlayout_new_0/XM12/a_n116_n206#" "foldedcasc_cmfb_forlayout_new_0/Ibias25u" -284.409 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -41600 -1200 0 0 0 0 0 0 0 0
+merge "foldedcasc_cmfb_forlayout_new_0/Ibias25u" "Ibias25u"
+merge "XR1/a_n520_n1972#" "XR1/a_n800_n1972#" -189.138 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17940 -964 0 0 0 0 0 0 0 0
+merge "XR1/a_n800_n1972#" "m1_n1300_11920#"
+merge "XR2/a_n520_n1972#" "XR2/a_n800_n1972#" -188.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17894 -962 0 0 0 0 0 0 0 0
+merge "XR2/a_n800_n1972#" "m1_8860_11920#"
+merge "XR5/a_n312_n834#" "ppolyf_u_1k_SBHPZ7_0/a_n312_n834#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_SBHPZ7_0/a_n312_n834#" "XR2/a_n1572_n2184#"
+merge "XR2/a_n1572_n2184#" "XR1/a_n1572_n2184#"
+merge "XR1/a_n1572_n2184#" "foldedcasc_cmfb_forlayout_new_0/VSUBS"
+merge "foldedcasc_cmfb_forlayout_new_0/VSUBS" "GND"
+merge "XR2/a_1160_n1972#" "XR2/a_880_n1972#" -198.402 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17894 -962 0 0 0 0 0 0 0 0
+merge "XR2/a_880_n1972#" "m1_10540_11920#"
+merge "foldedcasc_cmfb_forlayout_new_0/m1_4000_9940#" "net1" -42.1841 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4800 -320 0 0 0 0
+merge "XR2/a_n1080_n1972#" "XR2/a_n1360_n1972#" -198.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17894 -962 0 0 0 0 0 0 0 0
+merge "XR2/a_n1360_n1972#" "m1_8300_11920#"
+merge "XR1/a_600_n1972#" "XR1/a_320_n1972#" -189.138 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17940 -964 0 0 0 0 0 0 0 0
+merge "XR1/a_320_n1972#" "m1_n180_11920#"
+merge "foldedcasc_cmfb_forlayout_new_0/m1_5020_11060#" "net2" -42.2235 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4800 -320 0 0 0 0
+merge "foldedcasc_cmfb_forlayout_new_0/m1_4200_11220#" "net5" -43.9085 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4800 -320 0 0 0 0
+merge "XR2/a_320_1850#" "XR2/a_40_1850#" -189.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17505 -958 0 0 0 0 0 0 0 0
+merge "XR2/a_40_1850#" "m1_9700_15800#"
+merge "foldedcasc_cmfb_forlayout_new_0/VDD" "VDD" -198.293 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19600 -560 0 0 0 0 0 0 0 0
+merge "XR5/a_n100_n622#" "Vinp_FDA" -93.2442 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8280 -452 0 0 0 0 0 0 0 0
+merge "XR1/a_880_1850#" "XR1/a_600_1850#" -189.722 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17940 -964 0 0 0 0 0 0 0 0
+merge "XR1/a_600_1850#" "m1_100_15800#"
+merge "XR1/a_1160_n1972#" "XR1/a_880_n1972#" -199.124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17940 -964 0 0 0 0 0 0 0 0
+merge "XR1/a_880_n1972#" "m1_380_11920#"
+merge "foldedcasc_cmfb_forlayout_new_0/Vb1" "Vb1" -439.075 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24000 -680 0 0 0 0 0 0
+merge "ppolyf_u_1k_SBHPZ7_0/a_n100_n622#" "Vinn_FDA" -99.1596 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7566 -466 0 0 0 0 0 0 0 0
+merge "foldedcasc_cmfb_forlayout_new_0/Vb2" "Vb2" -121.83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24000 -680 0 0 0 0 0 0
+merge "foldedcasc_cmfb_forlayout_new_0/GND" "m1_4500_5100#" -132.945 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20000 -600 0 0 0 0 0 0 0 0
+merge "XR2/a_n800_1850#" "XR2/a_n1080_1850#" -189.221 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17505 -958 0 0 0 0 0 0 0 0
+merge "XR2/a_n1080_1850#" "m1_8580_15800#"
+merge "foldedcasc_cmfb_forlayout_new_0/Vb3" "Vb3" -102.512 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14400 -600 0 0 0 0 0 0
+merge "foldedcasc_cmfb_forlayout_new_0/Vb4" "Vb4" -212.72 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14000 -480 0 0 0 0 0 0
+merge "XR2/a_1160_1850#" "foldedcasc_cmfb_forlayout_new_0/Voutn" -995.097 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4100 -282 -182000 -3840 0 0 0 0 0 0
+merge "foldedcasc_cmfb_forlayout_new_0/Voutn" "Voutn"
+merge "XR1/a_n800_1850#" "XR1/a_n1080_1850#" -193.477 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17940 -964 0 0 0 0 0 0 0 0
+merge "XR1/a_n1080_1850#" "m1_n1580_15800#"
+merge "XR1/a_320_1850#" "XR1/a_40_1850#" -189.722 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17940 -964 0 0 0 0 0 0 0 0
+merge "XR1/a_40_1850#" "m1_n460_15800#"
+merge "foldedcasc_cmfb_forlayout_new_0/Voutp" "XR1/a_n1360_1850#" -1037 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3900 -278 -182000 -3840 0 0 0 0 0 0
+merge "XR1/a_n1360_1850#" "Voutp"
+merge "XR1/a_n1080_n1972#" "XR1/a_n1360_n1972#" -198.872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17940 -964 0 0 0 0 0 0 0 0
+merge "XR1/a_n1360_n1972#" "m1_n1860_11920#"
+merge "XR1/a_1160_1850#" "ppolyf_u_1k_SBHPZ7_0/a_n100_500#" -2027.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20724 -1132 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_SBHPZ7_0/a_n100_500#" "foldedcasc_cmfb_forlayout_new_0/Vinn"
+merge "foldedcasc_cmfb_forlayout_new_0/Vinn" "Vinn_OTA"
+merge "XR1/a_n240_1850#" "XR1/a_n520_1850#" -189.722 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17940 -964 0 0 0 0 0 0 0 0
+merge "XR1/a_n520_1850#" "m1_n1020_15800#"
+merge "XR1/a_40_n1972#" "XR1/a_n240_n1972#" -189.138 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17940 -964 0 0 0 0 0 0 0 0
+merge "XR1/a_n240_n1972#" "m1_n740_11920#"
+merge "XR2/a_n240_1850#" "XR2/a_n520_1850#" -189.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17505 -958 0 0 0 0 0 0 0 0
+merge "XR2/a_n520_1850#" "m1_9140_15800#"

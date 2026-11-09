@@ -124,7 +124,7 @@ N 2100 -580 2140 -580 {lab=#net6
 }
 N 2100 -550 2140 -550 {lab=#net5
 }
-N 2000 -550 2040 -550 {lab=Voutn1
+N 2000 -550 2040 -550 {lab=Voutp2
 }
 N 2140 -600 2140 -580 {lab=#net6
 }
@@ -138,15 +138,15 @@ N 2390 -720 2390 -620 {lab=25u_3
 }
 N 2390 -720 2450 -720 {lab=25u_3
 }
-N 2000 -580 2040 -580 {lab=Voutp1
+N 2000 -580 2040 -580 {lab=Voutn2
 }
 N 2520 -580 2610 -580 {lab=#net7
 }
 N 2520 -560 2610 -560 {lab=#net4
 }
-N 1920 -580 2000 -580 {lab=Voutp1
+N 1920 -580 2000 -580 {lab=Voutn2
 }
-N 1920 -550 2000 -550 {lab=Voutn1
+N 1920 -550 2000 -550 {lab=Voutp2
 }
 N 320 -1390 320 -1360 {lab=Vb1
 }
@@ -236,6 +236,55 @@ N 2150 -1130 2260 -1130 {lab=25u_4}
 N 2150 -1110 2260 -1110 {lab=25u_3}
 N 2150 -1090 2260 -1090 {lab=25u_1}
 N 2150 -1070 2260 -1070 {lab=25u_0}
+N 2010 -170 2080 -170 {lab=Voutp2
+}
+N 2080 -170 2080 -20 {lab=Voutp2
+}
+N 1700 -160 1770 -160 {lab=#net9
+}
+N 1700 -190 1770 -190 {lab=#net10
+}
+N 1700 -360 1700 -210 {lab=#net10
+}
+N 2010 -190 2080 -190 {lab=Voutn2
+}
+N 2080 -360 2080 -190 {lab=Voutn2
+}
+N 1800 -330 1800 -270 {lab=Vb1
+}
+N 1820 -310 1820 -270 {lab=Vb2
+}
+N 1920 -360 2080 -360 {lab=Voutn2
+}
+N 1700 -360 1860 -360 {lab=#net10
+}
+N 1920 -20 2080 -20 {lab=Voutp2
+}
+N 1700 -20 1860 -20 {lab=#net9
+}
+N 1660 -190 1700 -190 {lab=#net10
+}
+N 1660 -160 1700 -160 {lab=#net9
+}
+N 1560 -160 1600 -160 {lab=Voutn1
+}
+N 1700 -210 1700 -190 {lab=#net10
+}
+N 1700 -160 1700 -20 {lab=#net9
+}
+N 1840 -300 1840 -270 {lab=Vb3
+}
+N 1860 -290 1860 -270 {lab=Vb4
+}
+N 1950 -330 1950 -230 {lab=25u_5
+}
+N 1950 -330 2010 -330 {lab=25u_5
+}
+N 1560 -190 1600 -190 {lab=Voutp1
+}
+N 2080 -190 2140 -190 {lab=Voutn2}
+N 2080 -170 2140 -170 {lab=Voutp2}
+N 2150 -1050 2260 -1050 {lab=25u_5}
 C {vsource.sym} 840 -1080 0 0 {name=V1 value=3.3 savecurrent=false}
 C {vdd.sym} 840 -1130 0 0 {name=l6 lab=VDD}
 C {gnd.sym} 840 -1050 0 0 {name=l11 lab=0}
@@ -299,13 +348,13 @@ C {vdd.sym} 1500 -630 0 0 {name=l15 lab=VDD
 C {gnd.sym} 1500 -490 0 0 {name=l16 lab=0
 }
 C {res.sym} 1500 -740 1 0 {name=R2
-value=158k
+value=500k
 footprint=1206
 device=resistor
 m=1
 }
 C {res.sym} 1500 -400 1 0 {name=R3
-value=158k
+value=500k
 footprint=1206
 device=resistor
 m=1
@@ -335,13 +384,13 @@ C {vdd.sym} 2330 -640 0 0 {name=l24 lab=VDD
 C {gnd.sym} 2330 -500 0 0 {name=l25 lab=0
 }
 C {res.sym} 2330 -750 1 0 {name=R10
-value=158k
+value=500k
 footprint=1206
 device=resistor
 m=1
 }
 C {res.sym} 2330 -410 1 0 {name=R11
-value=158k
+value=500k
 footprint=1206
 device=resistor
 m=1
@@ -442,7 +491,7 @@ C {gnd.sym} 730 -450 0 0 {name=l38 lab=0
 }
 C {vdd.sym} 670 -650 0 0 {name=l39 lab=VDD
 }
-C {gnd.sym} 2150 -1050 0 0 {name=l40 lab=0
+C {gnd.sym} 2150 -1030 0 0 {name=l40 lab=0
 }
 C {lab_pin.sym} 710 -710 0 0 {name=p4 sig_type=std_logic lab=Vb1
 }
@@ -475,13 +524,12 @@ device="ceramic capacitor"
 }
 C {gnd.sym} 3460 -490 0 0 {name=l44 lab=0
 }
-C {lab_pin.sym} 1940 -580 1 0 {name=p47 sig_type=std_logic lab=Voutp1
+C {lab_pin.sym} 1940 -580 1 0 {name=p47 sig_type=std_logic lab=Voutn2
 }
-C {lab_pin.sym} 1940 -550 3 0 {name=p52 sig_type=std_logic lab=Voutn1
+C {lab_pin.sym} 1940 -550 3 0 {name=p52 sig_type=std_logic lab=Voutp2
 }
-C {jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 1490 -560 0 0 {name=x1}
-C {jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 2320 -570 0 0 {name=x2}
-C {comparator/schematic-design/coc_forsym.sym} 3280 -550 0 0 {name=x4}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout_new.sym} 1490 -580 0 0 {name=x1}
+C {chipathon-2026-ppg/comparator/schematic-design/coc_forsym.sym} 3280 -550 0 0 {name=x4}
 C {code.sym} 890 -1140 0 0 {name=MODELS only_toplevel=true  
 format="tcleval( @value )" 
 value="
@@ -523,3 +571,53 @@ C {lab_pin.sym} 2260 -1090 0 1 {name=p46 sig_type=std_logic lab=25u_1
 }
 C {lab_pin.sym} 2260 -1070 0 1 {name=p48 sig_type=std_logic lab=25u_0
 }
+C {lab_pin.sym} 1820 -310 3 1 {name=p49 sig_type=std_logic lab=Vb2
+}
+C {lab_pin.sym} 1800 -330 0 0 {name=p50 sig_type=std_logic lab=Vb1
+}
+C {vdd.sym} 1890 -250 0 0 {name=l3 lab=VDD
+}
+C {gnd.sym} 1890 -110 0 0 {name=l4 lab=0
+}
+C {res.sym} 1890 -360 1 0 {name=R1
+value=500k
+footprint=1206
+device=resistor
+m=1
+}
+C {res.sym} 1890 -20 1 0 {name=R6
+value=500k
+footprint=1206
+device=resistor
+m=1
+}
+C {res.sym} 1630 -160 1 0 {name=R7
+value=5k
+footprint=1206
+device=resistor
+m=1
+}
+C {res.sym} 1630 -190 1 0 {name=R8
+value=5k
+footprint=1206
+device=resistor
+m=1
+}
+C {lab_pin.sym} 1860 -290 0 1 {name=p51 sig_type=std_logic lab=Vb4
+}
+C {lab_pin.sym} 1840 -300 3 1 {name=p53 sig_type=std_logic lab=Vb3
+}
+C {lab_pin.sym} 1560 -190 1 0 {name=p55 sig_type=std_logic lab=Voutp1
+}
+C {lab_pin.sym} 1560 -160 3 0 {name=p56 sig_type=std_logic lab=Voutn1
+}
+C {lab_pin.sym} 2140 -190 1 0 {name=p57 sig_type=std_logic lab=Voutn2
+}
+C {lab_pin.sym} 2140 -170 3 0 {name=p58 sig_type=std_logic lab=Voutp2
+}
+C {lab_pin.sym} 2260 -1050 0 1 {name=p54 sig_type=std_logic lab=25u_5
+}
+C {lab_pin.sym} 2010 -330 0 1 {name=p59 sig_type=std_logic lab=25u_5
+}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout_new.sym} 1880 -200 0 0 {name=x2}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout_new.sym} 2320 -590 0 0 {name=x6}

@@ -110,4 +110,4 @@ C {iopin.sym} 1280 -520 0 0 {name=p9 lab=Vb2}
 C {iopin.sym} 1280 -480 0 0 {name=p10 lab=Vb3}
 C {iopin.sym} 1280 -440 0 0 {name=p11 lab=Vb4}
 C {iopin.sym} 1280 -400 0 0 {name=p12 lab=Ibias25u}
-C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout.sym} 980 -600 0 0 {name=x1}
+C {chipathon-2026-ppg/jz_fda2/xschem/foldedcasc_cmfb_forlayout_new.sym} 980 -620 0 0 {name=x1}

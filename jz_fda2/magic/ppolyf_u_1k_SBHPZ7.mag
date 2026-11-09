@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787488532
+timestamp 1794108508
 << pwell >>
 rect -336 -858 336 858
 << psubdiff >>
@@ -47,5 +47,5 @@ rect -299 -821 299 -775
 string FIXED_BBOX -276 -798 276 798
 string gencell ppolyf_u_1k
 string library gf180mcu
-string parameters w 1.0 l 5.0 m 1 nx 1 wmin 1.000 lmin 1.000 class resistor rho 1000 val 5.0k dummy 0 dw 0.0 term 0.0 sterm 0.0 caplen 0.4 snake 0 glc 1 grc 1 gtc 0 gbc 0 roverlap 0 endcov 100 full_metal 1 compatible {ppolyf_u_1k ppolyf_u_1k_6p0}
+string parameters w 1.000 l 5 m 1 nx 1 wmin 1.000 lmin 1.000 class resistor rho 1000 val 5.0k dummy 0 dw 0.0 term 0.0 sterm 0.0 caplen 0.4 snake 0 glc 1 grc 1 gtc 0 gbc 0 roverlap 0 endcov 100 full_metal 1 compatible {ppolyf_u_1k ppolyf_u_1k_6p0}
 << end >>

@@ -42,76 +42,79 @@ Circuit 1: ppolyf_u_1k                     |Circuit 2: ppolyf_u_1k
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes ppolyf_u_1k and ppolyf_u_1k are equivalent.
-Flattening unmatched subcell pfet_03v3_2JHB2G in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
-Flattening unmatched subcell pfet_03v3_9X9WZQ in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
-Flattening unmatched subcell pfet_03v3_NPQ64B in circuit foldedcasc_cmfb_forlayout (1)(1 instance)
-Flattening unmatched subcell pfet_03v3_BGXDRV in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
-Flattening unmatched subcell pfet_03v3_K6VR6N in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
-Flattening unmatched subcell pfet_03v3_PH8H39 in circuit foldedcasc_cmfb_forlayout (1)(1 instance)
-Flattening unmatched subcell nfet_03v3_H55Z6X in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
-Flattening unmatched subcell nfet_03v3_Q9T6P6 in circuit foldedcasc_cmfb_forlayout (1)(2 instances)
+Flattening unmatched subcell pfet_03v3_3S3Y6A in circuit foldedcasc_cmfb_forlayout_new (1)(2 instances)
+Flattening unmatched subcell pfet_03v3_V54GYD in circuit foldedcasc_cmfb_forlayout_new (1)(2 instances)
+Flattening unmatched subcell pfet_03v3_2JHB2G in circuit foldedcasc_cmfb_forlayout_new (1)(2 instances)
+Flattening unmatched subcell pfet_03v3_P66WWN in circuit foldedcasc_cmfb_forlayout_new (1)(1 instance)
+Flattening unmatched subcell nfet_03v3_EGPF84 in circuit foldedcasc_cmfb_forlayout_new (1)(2 instances)
+Flattening unmatched subcell nfet_03v3_6GN9JW in circuit foldedcasc_cmfb_forlayout_new (1)(2 instances)
+Flattening unmatched subcell pfet_03v3_GKWNHT in circuit foldedcasc_cmfb_forlayout_new (1)(2 instances)
+Flattening unmatched subcell pfet_03v3_4RWQLS in circuit foldedcasc_cmfb_forlayout_new (1)(2 instances)
 
-Class foldedcasc_cmfb_forlayout (1):  Merged 27 parallel devices.
+Class foldedcasc_cmfb_forlayout_new (1):  Merged 27 parallel devices.
 Subcircuit summary:
-Circuit 1: foldedcasc_cmfb_forlayout       |Circuit 2: foldedcasc_cmfb_forlayout       
+Circuit 1: foldedcasc_cmfb_forlayout_new   |Circuit 2: foldedcasc_cmfb_forlayout_new   
 -------------------------------------------|-------------------------------------------
 nfet_03v3 (4)                              |nfet_03v3 (12->4)                          
-pfet_03v3 (10)                             |pfet_03v3 (29->10)                         
-Number of devices: 14                      |Number of devices: 14                      
+pfet_03v3 (11)                             |pfet_03v3 (30->11)                         
+Number of devices: 15                      |Number of devices: 15                      
 Number of nets: 17                         |Number of nets: 17                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists do not match.
+   Networks match locally but not globally.
+   Probably connections are swapped.
+   Check the end of logfile comp.out for implicated nodes.
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: foldedcasc_cmfb_forlayout_new   |Circuit 2: foldedcasc_cmfb_forlayout_new   
+
+---------------------------------------------------------------------------------------
+Net: net1                                  |Net: m1_4000_9940#                         
+  nfet_03v3/(1|3) = 2                      |  pfet_03v3/(1|3) = 1                      
+  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 2                      
+                                           |                                           
+Net: net2                                  |Net: m1_5060_6900#                         
+  nfet_03v3/(1|3) = 2                      |  pfet_03v3/(1|3) = 1                      
+  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 2                      
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits foldedcasc_cmfb_forlayout_new foldedcasc_cmfb_forlayout_new
+Flattening unmatched subcell ppolyf_u_1k_SBHPZ7 in circuit fda2_forlayout_new (1)(2 instances)
+Flattening unmatched subcell ppolyf_u_1k_LUSA4K in circuit fda2_forlayout_new (1)(2 instances)
+
+Class fda2_forlayout_new (1):  Merged 18 series devices.
+Subcircuit summary:
+Circuit 1: fda2_forlayout_new              |Circuit 2: fda2_forlayout_new              
+-------------------------------------------|-------------------------------------------
+ppolyf_u_1k (4)                            |ppolyf_u_1k (22->4)                        
+nfet_03v3 (4)                              |nfet_03v3 (8->4)                           
+pfet_03v3 (11)                             |pfet_03v3 (20->11)                         
+Number of devices: 19                      |Number of devices: 19                      
+Number of nets: 19                         |Number of nets: 19                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: foldedcasc_cmfb_forlayout       |Circuit 2: foldedcasc_cmfb_forlayout       
+Circuit 1: fda2_forlayout_new              |Circuit 2: fda2_forlayout_new              
 -------------------------------------------|-------------------------------------------
-Vinp                                       |Vinp                                       
-Vinn                                       |Vinn                                       
-VDD                                        |VDD                                        
-GND                                        |GND                                        
-Vb4                                        |Vb4                                        
-Vb1                                        |Vb1                                        
 Vb3                                        |Vb3                                        
 Vb2                                        |Vb2                                        
-Ibias25u                                   |Ibias25u                                   
-Voutp                                      |Voutp                                      
-Voutn                                      |Voutn                                      
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes foldedcasc_cmfb_forlayout and foldedcasc_cmfb_forlayout are equivalent.
-Flattening unmatched subcell ppolyf_u_1k_SBHPZ7 in circuit fda2 (1)(2 instances)
-Flattening unmatched subcell ppolyf_u_1k_H7P4BW in circuit fda2 (1)(2 instances)
-
-Class fda2 (1):  Merged 38 series devices.
-Subcircuit summary:
-Circuit 1: fda2_forlayout                  |Circuit 2: fda2                            
--------------------------------------------|-------------------------------------------
-foldedcasc_cmfb_forlayout (1)              |foldedcasc_cmfb_forlayout (1)              
-ppolyf_u_1k (4)                            |ppolyf_u_1k (42->4)                        
-Number of devices: 5                       |Number of devices: 5                       
-Number of nets: 13                         |Number of nets: 13                         
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: fda2_forlayout                  |Circuit 2: fda2                            
--------------------------------------------|-------------------------------------------
-GND                                        |GND                                        
-Voutn                                      |Voutn                                      
-Voutp                                      |Voutp                                      
-Vinp                                       |Vinp                                       
-Vinn                                       |Vinn                                       
-VDD                                        |VDD                                        
-Vb4                                        |Vb4                                        
 Vb1                                        |Vb1                                        
-Vb3                                        |Vb3                                        
+Vb4                                        |Vb4                                        
+VDD                                        |VDD                                        
+Voutp                                      |Voutp                                      
+Voutn                                      |Voutn                                      
+GND                                        |GND                                        
 Ibias25u                                   |Ibias25u                                   
-Vb2                                        |Vb2                                        
+Vinn_FDA                                   |Vinn_FDA                                   
+Vinp_FDA                                   |Vinp_FDA                                   
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes fda2_forlayout and fda2 are equivalent.
+Device classes fda2_forlayout_new and fda2_forlayout_new are equivalent.
 
 Final result: Circuits match uniquely.
 .
