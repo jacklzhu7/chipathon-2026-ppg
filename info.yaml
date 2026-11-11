@@ -70,10 +70,6 @@ pins:
     io_type: ground
   - name: Ibias
     io_type: analog
-  - name: LED_K
-    io_type: analog
-  - name: VSET 
-    io_type: analog
   - name: Comparator_out
     io_type: analog
   - name: VDD
